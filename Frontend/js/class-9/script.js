@@ -41,20 +41,41 @@ console.log(str); // Output: My name is John and I am 30 years old. */
 // arr.unshift(0); // Adding an element to the beginning of the array
 
 // map() method : is used to create a new array by applying a function to each element of an existing array. It does not modify the original array.
-/*
-let op = [1, 2, 3, 4, 5];
+/*let op = [1, 2, 3, 4, 5];
 let modify = op.map((items) => {
     return items * 2;
 });
-
 console.log(modify); */
 
-// filter() method : reates a new array containing only the elements that pass a specific condition (i.e., for which the callback returns true).
-/*
-let numbers = [1, 2, 3, 4, 5];
+// filter() method : creates a new array containing only the elements that pass a specific condition (i.e., for which the callback returns true).
+//return array of Elements;
+/*let numbers = [1, 2, 3, 4, 5];
 let ans = numbers.filter( (a) => {
     if(a % 2 === 0) {
         return a;
     }
 });
 console.log(ans); // [2, 4] */
+
+/*let op = [1, 2, 3, 4, 5];
+let modify = op.map((items) => {
+    return items * 2;
+}).filter((a) => {
+    return a > 4;
+});
+console.log(modify); */
+
+// find() method : is used to search for the first element in an array that satisfies a specified condition. It returns the value of the first element that matches the condition, or undefined if no such element is found.
+/*let num = [1, 2, 3, 4, 5];
+let findNum = num.find((a) => {
+    return a > 3;
+});
+console.log(findNum); */
+
+/*let op = [1, 2, 3, 4, 5];
+let modify = op.map((items) => {
+    return items * 2;
+}).find((a) => {
+    return a > 4;
+});
+console.log(modify);*/
