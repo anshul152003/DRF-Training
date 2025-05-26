@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    height: 70%;
+    background-color: aqua;
+    margin: 0 auto;
+    margin-top: 150px;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.items{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    color: azure;
+}
+
+#div40{
+    flex-grow: 6;
+    flex-shrink: 3;
+}
+
+#div1{
+    flex-grow: 3;
+}

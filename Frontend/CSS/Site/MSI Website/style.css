@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page1-img {
+    background-image: url(assests/lim-head.jpg);
+    height: 120vh;
+    width: 99vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headerimage1 {
+    margin-top: 8%;
+}
+
+.headerimage1 img {
+    width: 5em;
+    height: 3em;
+}
+
+.headertext {
+    margin-top: 7%;
+    margin-left: 18%;
+}
+
+.headertext p {
+    color: white;
+    font-size: 1.4em;
+}
+
+.headertext span {
+    font-size: 1.6em;
+}
+
+.headerimage2 {
+    margin-top: 6%;
+    margin-left: 29%;
+    display: flex;
+    gap: 7%;
+}
+
+.headerimage2 img {
+    width: 5em;
+    height: 5em;
+}
+
+.headerimage2 p {
+    margin-top: 7%;
+    font-size: .75em;
+}
+
+.page2-img {
+    background-image: url(assests/Prestige.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 99vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page2heading {
+    color: gray;
+    font-size: 15px;
+}
+
+.page2heading span {
+    color: goldenrod;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.page3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  
+  .box-left img{
+    height: 90vh;
+    width: 50vw;
+  }
+  
+  .box-right {
+    width: 50vw;
+    padding: 20px;
+  }
+  
+  .box-right h2 {
+    color: #b28e4a;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    margin-left: 8em;
+  }
+  
+  .box-right hr {
+    width: 16em;
+    border: 1px solid #b28e4a;
+    margin-left: 12em;
+    margin-bottom: 1em;
+  }
+  
+  .box-right .content {
+    font-size: 16px;
+    margin-left: 7em;
+    margin-bottom: 1em;
+    color: #555;
+  }
+  
+  .subdiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10em;
+    gap: 5em;
+  }
+
+  .containers img{
+    width: 12em;
+    height: 10em;
+    border: 2px solid goldenrod;
+  }
+
+  .containers p{
+    color: goldenrod;
+    margin-left: 1.6em;
+  }
+
+  .page5 {
+    background-image: url("./assests/RJ45.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page5flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5%;
+    margin-left: 45%;
+  }
+  
+  .page5Head {
+    color: goldenrod;
+    font-size: 30px;
+  }
+  .page5Line {
+    width: 200px;
+    height: 2px;
+    background-color: goldenrod;
+  }
+  .page5Head2 {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  .page5Para {
+    color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+  .page6 {
+    background-image: url("assests/YearWarranty_sm.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 90vh;
+    width: 100vw;
+  }
+  .page6flex {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 25px;
+  }
+  
+  .page6Head {
+    color: goldenrod;
+    font-size: 30px;
+  }
+  .page6Line {
+    width: 350px;
+    height: 2px;
+    background-color: goldenrod;
+  }
+  .page6para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  .page6img {
+    width: 280px;
+  }
+  .page6term {
+    display: flex;
+    flex-direction: column;
+    color: goldenrod;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  .page6btn {
+    padding: 10px 30px;
+    color: grey;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .page7 {
+    background-image: url("./assests/PrestigeNB.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 140vh;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 150px;
+    align-items: end;
+  }
+  .pcimg {
+    width: 700px;
+  }
+  .page7flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+  }
+  .page7pc1 {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+  .pc1details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .pc1details h1 {
+    color: goldenrod;
+    font-size: 30px;
+    font-weight: lighter;
+  }
+  .pc1details h3 {
+    color: black;
+    font-size: 18px;
+  }
+  .page7point {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: grey;
+  }
+  .page7btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: grey;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+
+.page8-img {
+    background-image: url("assests/PrestigeAll.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 99vw;
+}
+
+.smalltxt{
+    color: gray;
+    font-size: 1.6em;
+    margin-left: 45%;
+}
+
+.smalltxt span{
+    color: goldenrod;
+    font-size: 1.7em;
+    margin-left: -10%;
+}
+
+.footer {
+    background: #f9f9f9;
+    padding: 40px 20px 20px;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.footer-left .logo {
+    width: 100px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 10px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+}
+
+.footer-bottom .links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-bottom .links a:hover {
+    text-decoration: underline;
+}

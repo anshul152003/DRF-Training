@@ -1,0 +1,147 @@
+HTML Tags are fundamental elements used to structure and format content on web pages. They provide instructions to web browsers on how to render text, images, links, and other media.
+
+HTML tags are enclosed in angle brackets < > and usually come in pairs: an opening tag and a closing tag. The closing tag has the same text as the opening tag, but with an additional forward-slash /. The opening tag marks the beginning of an element, while the closing tag marks the end.
+
+An HTML element is defined by a start tag, some content, and an end tag.
+
+The HTML element is everything from the start tag to the end tag:
+<tagname>Content goes here...</tagname>
+Self-closing tags, also known as void elements, are HTML elements that do not require a separate closing tag. These tags are self-contained and are typically used for elements that do not have any content between an opening and closing tag
+•	<img>: Used to embed images.
+•	<br>: Inserts a line break.
+•	<hr>: Creates a horizontal rule (line).
+•	<input>: Defines an input control.
+•	<meta> tag: Provides metadata about the HTML document.
+•	<link> tag: Used to link external resources like stylesheets.
+
+After tag name very thing is know as Attributes ,additional features of tag 
+•	All HTML elements can have attributes
+•	Attributes provide additional information about elements
+•	Attributes are always specified in the start tag
+•	Attributes usually come in name/value pairs like: name="value"
+
+<img> Tag:
+Used to embed images in an HTML page.
+
+🔹 Attributes: Attribute	Purpose
+src	(source) The path or URL of the image file
+alt	(alternative text) A text description shown if the image fails to load or for screen readers (accessibility)
+Why alt is important:
+•	Helps with accessibility (screen readers).
+•	Improves SEO (search engines can read alt text).
+•	Useful if the image fails to load.
+•	alt text helps them understand what the image is about.
+•	It helps improve image search ranking and overall SEO.
+•	Users still get an idea of the content or purpose of the image even if it's not visible.
+
+The <iframe> tag in HTML is used to embed another HTML document inside the current webpage. It essentially creates an inline frame that can display content from a different webpage, such as another webpage, video, map, or any other external resource.
+
+The <sub> and <sup> tags in HTML are used to create subscript and superscript text, respectively. These tags adjust the positioning of the text to make it appear lower or higher than the normal line of text.
+
+•	Block-level Elements
+•	A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+•	A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+•	Two commonly used block elements are: <p> and <div>.
+•	The <p> element defines a paragraph in an HTML document.
+•	The <div> element defines a division or a section in an HTML document.
+
+•	Inline Elements
+•	An inline element does not start on a new line.
+•	An inline element only takes up as much width as necessary.
+•	This is a <span> element inside a paragraph.
+
+An inline-block element in HTML/CSS is an element that behaves like both an inline and a block element — it's kind of the best of both worlds.
+
+The HTML <div> tag is used to define sections in web pages. Developers use this tag to group HTML elements, allowing them to apply CSS styles to multiple <div> elements continuously
+
+Markup Languages: Markup languages are completely different from programming languages and scripting languages. Markup languages prepare a structure for the data or prepare the look or design of a page. These are presentational languages and it doesn’t include any kind of logic or algorithm, for example, HTML. 
+
+HTML is not asking any kind of question to the computer or it’s not comparing things and it’s not asking any logical question. It’s just used to represent a view inside a web browser. It tells the browser how to structure data for a specific page, layout, headings, title, table and all or styling a page in a particular way. So basically it involves formatting data or it controls the presentation of data. Examples of Markup languages are HTML or XML. 
+
+These languages are most widely used to design a website. 
+href="https://www.example.com" tells the browser where to go when the link is clicked.
+
+hypertext
+Hypertext is text that contains links (called hyperlinks) to other pieces of text or resources, allowing you to navigate between documents or web pages quickly and easily.
+
+Hyperlink
+A hyperlink contains a webpage’s URL and is activated by clicking on hypertext. Hidden in various media types, it appears highlighted on hover and opens a new document.
+
+Hypertext
+Hypertext is text displayed on a digital device with embedded hyperlinks, enabling users to navigate quickly to related content within or outside the document.
+The <a> tag in HTML is called the anchor tag, and it's used to create hyperlinks that let users click and jump to another page, section, file, or resource.
+The <video> tag in HTML is used to embed video content into a webpage. The controls attribute is what adds play, pause, volume, and fullscreen buttons for user interaction.
+
+what is alternative for radio and check------------select
+html doc font size by default 16px
+To make a cell span over multiple rows, use the rowspan attribute:
+To make a cell span over multiple columns, use the colspan attribute:
+The <pre> tag in HTML is used to display preformatted text. It preserves both whitespace and line breaks in the text exactly as they appear in the HTML code, making it ideal for displaying code snippets, poetry, or any text where formatting matters
+Key Points:
+•	Preserves spaces and tabs: Unlike other HTML elements, the <pre> tag doesn’t collapse consecutive spaces into one.
+•	Preserves new lines: Line breaks (newlines) in the code will be shown exactly where they are.
+
+🔹 1. Root Element
+•	The root element is the top-most element in an HTML document. It contains all the other elements and is represented by the <html> tag.
+🔹 2. Parent Element
+•	A parent element is an element that contains one or more child elements inside it. The parent element can be any HTML element that wraps around other elements
+🔹 3. Child Element
+•	A child element is an element that is nested inside another element. It is a direct descendant of its parent element.
+In HTML, a list is a collection of items grouped together. There are three main types of lists in HTML: unordered lists, ordered lists, and description lists. Each type is used for different purposes, depending on how you want to display the list items.
+1. Unordered List (<ul>)
+An unordered list is used when the order of the list items doesn't matter. It typically displays with bullet points (or other markers depending on CSS).
+2. Ordered List (<ol>)
+An ordered list is used when the order of the list items does matter. It is typically displayed with numbers or letters
+3. Description List (<dl>)
+A description list is used when you want to create a list of terms and their corresponding descriptions. It consists of <dt> (definition term) and <dd> (definition description).
+
+Radio Button (<input type="radio">)
+•	Purpose: Radio buttons are used when you need to allow the user to select only one option from a group of options.
+🔹 Checkbox (<input type="checkbox">)
+•	Purpose: Checkboxes are used when you need to allow the user to select multiple options from a group.
+The <select> element in HTML is used to create a dropdown list or a list of options from which a user can choose. It allows the user to pick one or more options from the list, depending on the attributes used.
+
+<select name="optionName">
+  <option value="value1">Option 1</option>
+  <option value="value2">Option 2</option>
+  <option value="value3">Option 3</option>
+</select>
+•  <select>: The parent element that defines the dropdown list.
+•  <option>: Defines individual items in the list. The value attribute specifies the value that will be sent to the server when the form is submitted
+When a user selects an option in the dropdown and submits the form, the value of the selected <option> is sent to the server as part of the form data.
+
+The rows and cols attributes are used with the <textarea> element in HTML to define the visible size of the text area in terms of the number of visible lines and characters per line, respectively.
+🔹 rows Attribute:
+•	The rows attribute specifies the number of visible lines (height) of the text area.
+•	It controls how many rows of text will be visible at once in the text box.
+cols Attribute:
+•	The cols attribute specifies the number of visible characters (width) in a single line of the text area.
+•	It controls how wide the text area will be (in terms of characters per line).
+Both rows and cols are often used together to define the dimensions of the <textarea>.
+
+required Attribute
+•	The required attribute specifies that the user must fill out the field before submitting the form.
+🔹 readonly Attribute
+•	The readonly attribute makes a form field non-editable. Users can still see the value in the field, but they cannot change it.
+
+doctype html means work
+Tells the Browser Which HTML Version to Use
+The declaration <!DOCTYPE html> is the Document Type Declaration (Doctype) in HTML. It tells the web browser which version of HTML the document is written in, helping it to render the page correctly.
+Base url : 
+
+Specifies the root URL for the page's links.
+🔹 Relative URL
+A relative URL is a URL that is relative to the current page or document. Instead of specifying the full address, a relative URL points to a file or resource within the same website, directory, or path.
+•	Purpose: Relative URLs allow you to link resources without the need for the full domain in the URL, making the code shorter and more portable.
+•	A relative URL depends on the context (i.e., the current URL of the page where it is used).
+🔹 Base URL
+The base URL defines the root address for relative links in a web page. It is typically used to set a reference point for all relative URLs in the document.
+•	Purpose: A base URL helps to make relative URLs simpler and more manageable by specifying a common starting point.
+•	The <base> element is used in the <head> section of an HTML document to define the base URL.
+
+
+In general, non-replaced elements are those whose content is contained in the document, whereas replaced-elements are those whose content is outside of the document.
+
+URL : Uniform Resource Locator. 
+      

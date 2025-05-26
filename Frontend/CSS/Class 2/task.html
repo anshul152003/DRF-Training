@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 10px;
+      padding: 50px 30px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .essential {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .essential label {
+      display: block;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .essential input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 5px;
+      font-size: 14px;
+      
+    }
+
+    .forgot {
+      text-align: right;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    .forgot a {
+      font-size: 13px;
+      color: #666;
+      text-decoration: none;
+    }
+
+    .loginbtn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+      border: none;
+      border-radius: 50px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: 0.3s ease;
+    }
+
+    .loginbtn:hover {
+      opacity: 0.9;
+    }
+
+    .text {
+      margin: 20px 0 10px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .icons a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #f1f1f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .icons a:hover {
+      background: #ddd;
+    }
+
+    .signup-text {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .signup-text a {
+      text-decoration: none;
+      color: #764ba2;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Login</h1>
+
+  <form>
+    <div class="essential">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Type your username"><br/><br/>
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Type your password">
+    </div>
+
+    <div class="forgot">
+      <a href="">Forgot password?</a>
+    </div>
+
+    <button type="submit" class="loginbtn">LOGIN</button>
+
+    <div class="text">Or Sign Up Using</div>
+
+    <div class="icons">
+      <a href=""><i class="fab fa-facebook-f"></i></a>
+      <a href=""><i class="fab fa-twitter"></i></a>
+      <a href=""><i class="fab fa-google"></i></a>
+    </div>
+
+    <div class="signup-text">
+      Or Sign Up Using <br/><br/>
+      <a href="#">SIGN UP</a>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

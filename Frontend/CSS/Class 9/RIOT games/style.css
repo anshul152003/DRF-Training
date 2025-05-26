@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+}
+.wrapper {
+    background-color:black;
+    width: 100vw;
+    height: 100%;
+}
+.section1 {
+            position: relative;
+            width: 100vw;
+            height: 80vh;
+            background: url('assests/lor-6-5-eventcard-3840x1600-r2.png') no-repeat center center;
+filter: brightness(80%);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        
+.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+           
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .riot-logo {
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+            margin-right: 40em;
+        }
+        
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        
+          .menu :hover{
+             text-decoration: underline;
+              text-decoration-color: red;
+               background-color: rgba(255, 255, 255, 0.1); 
+                 width: 80%;
+                 border-radius: 30%;
+          } 
+        .right-nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 8px 15px;
+            width: 10em;
+        }
+        
+        .search-icon {
+            color: white;
+            margin-left: 4.5em;
+        }
+        
+        .sign-in {
+            background-color: #d13639;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        
+        .language-selector {
+            color: white;
+           
+            
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .runeterra img{
+            width: 25%;
+        }
+        .legend{
+            flex-direction: column;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+            margin-left: 13em;
+        }
+        .legend h2{
+            font-weight: bolder;
+            color: white;
+            font-size: 30px;
+          
+        }
+          .legend span{
+            color: white;
+            opacity: 60%;
+          }
+          .section2{
+            width: 100vw;
+            
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 0%;
+
+          }
+          .section2 h3{
+            font-size: 30px;
+            margin-top: 3em;
+            margin-left: 2em;
+            color: white;
+          }
+          .sec-img{
+            width: 20%;
+            height: 30%;
+            gap: 3em;
+          }
+          /* game grid */
+          .games-grid {
+         
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            margin: 10em;
+            height: 80vh;
+            margin-top: 3em;
+        }
+
+        .game-tile {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+          
+            cursor: pointer;
+            height: 250px;
+        }
+
+        .game-tile:hover {
+            /* transform: translateY(-5px); */
+               border: 3px solid white;
+            box-shadow: 0 0 15px white(255, 70, 85, 0.6);
+            
+        }
+ .game-logo {
+    position: absolute;
+            bottom: 30px;
+            left: 30px;
+            max-width: 180px;
+            z-index: 2;
+  }
+  
+        .game-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(75%); /* Reduced brightness */
+            transition: filter 0.4s ease;
+        }
+
+        .game-tile:hover .game-image {
+            filter: brightness(100%); /* Full brightness on hover */
+        }
+
+
+  
+
+     .games-grid{
+        display: flex;
+     }
+    .esports{
+         display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            margin: 10em;
+            margin-top: 4em;
+            margin-bottom: 0%;
+        }
+    .section3{
+        margin-top: 0%;
+      
+    
+    }
+    .entertainment{
+       display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            margin: 10em;
+            margin-top: 1em; 
+    }
+    .section4{
+         width: 100vw;
+            
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 0%;
+         margin-top: 0%;
+    }
+ .section4 h3{
+            font-size: 30px;
+            margin-top: 3em;
+            margin-left: 2em;
+            color: white;
+          }
+          /*------------------- annie------------ */
+          .left-half{
+            
+          }

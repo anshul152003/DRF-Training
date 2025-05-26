@@ -1,0 +1,27 @@
+Tag :  a piece of markup language used to indicate the beginning and end of an HTML element in an HTML document.
+
+Element : a component of an HTML document that tells a web browser how to structure and interpret a part of the HTML document. It consists of a starting tag, content, and an end tag.
+
+Attributes : provide additional information about elements, Attributes are always specified in the start tag, Attributes usually come in name/value pairs like: name="value".
+
+Use </p> when your paragraph contains text/content.
+Use <p/> only in React/JSX for empty paragraphs (rarely needed).
+
+how web works : You → Browser → DNS → Server → Response → Browser → Rendered Web Page
+When you enter a URL, the browser finds the website’s IP using DNS, sends a request to the server, gets back HTML, CSS, and JavaScript files, then renders and displays the page.
+
+Inline : Elements don’t start on a new line and only take up as much width as needed (e.g., <span>, <a>).
+
+Block : Elements start on a new line and take up the full width (e.g., <div>, <p>).
+
+Inline-Block : Like inline (doesn’t break line), but allows setting width, height, padding, and margin (e.g., good for buttons).
+
+Div : The <div> element is widely used because it's a generic block-level container that offers several advantages:
+- Flexible layout control: Works well with CSS for styling, positioning, and layout (Grid, Flexbox, etc.).
+- No semantic meaning: Ideal when no specific HTML tag fits, making it a neutral wrapper.
+- Grouping content: Useful for grouping related elements to apply common styles or logic.
+- JavaScript interaction: Easy to select and manipulate with JavaScript for dynamic behavior.
+In short: <div> gives you full control over layout and styling without enforcing any built-in behavior.
+
+Iframe : 
+

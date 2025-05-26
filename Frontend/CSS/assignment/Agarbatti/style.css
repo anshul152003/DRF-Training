@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+}
+
+.agarbatti {
+    position: relative;
+    top: 200px;
+    left: 50%;
+}
+
+.dua{
+    width: 20px;
+    height: 20px;
+    box-shadow: gray 0px 100px 35px 25px;
+    animation: duaa 1s ease-in-out infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.gray{
+    width: 20px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50% 50% 0 0;
+    opacity: 0.15;
+}
+
+.aag {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.kala {
+    width: 20px;
+    height: 250px;
+    background-color: #ffa600; 
+}
+
+.stand{
+    width: 100px;
+    height: 50px;
+    background-color: #4d5cff;
+    position: relative;
+    top: 200px;
+    left: 730px;
+    border-radius: 10px 10px;
+}
+
+@keyframes duaa {
+    0%{
+        transform: translateY(-80px);
+    }
+    30% {
+        transform: translateY(-100px);
+    }
+    50%{
+        transform: translateY(-150px);
+    }
+    80%{
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateY(-400px);
+    }
+}

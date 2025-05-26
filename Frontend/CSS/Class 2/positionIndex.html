@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <!-- <link rel="stylesheet" href="indexCss.css"> -->
+     <style>
+        /* #div1{
+            width: 200px;
+            border: 2px solid;
+            background-color: rosybrown;
+            position: relative;
+            left: 200px;
+            top: 200px;
+        } */
+        #parent{
+            width: 450px;
+            height: 450px;
+            background-color: blue;
+            position: relative;
+            left: 200px;
+            top: 100px;
+        }
+        #child1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 10px;
+            top: 50px;
+        }
+        #child2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            left: 10px;
+            top: 300px;
+        }
+        #child3{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            left: 325px;
+            top: 50px;
+        }   
+        #child4{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            left: 325px;
+            top: 300px;
+        }
+        #child5{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: absolute;
+            left: 175px;
+            top: 175px;
+        }
+        #parent-container{
+            height: 1000px;
+            left: 100px;
+            top: 100px;
+        }
+        #childSticky{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            position: sticky;
+            left: 10px;
+            top: 0%;
+        }   
+        #childFixed{
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            position: fixed;
+            left: 50px;
+            top: 150px;
+        }
+     </style>
+</head>
+<body>
+    <h1>Positioning in CSS</h1>
+    <!-- <div id="div1">
+        <p>This is paragraph one</p>
+    </div> -->
+
+    <div id="parent">This is parent
+        <div id="child1">This is child1</div>
+        <div id="child2">This is child2</div>
+        <div id="child3">This is child3</div>
+        <div id="child4">This is child4</div>    
+        <div id="child5">This is child5</div>
+    </div>
+
+    <div id="parent-container">
+        <div id="childSticky">this is sticky</div>
+        <div id="childFixed">this is fixed</div>
+    </div>
+</body>
+</html>

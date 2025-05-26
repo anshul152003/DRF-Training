@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+  .gallery-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .gallery-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .gallery-flex img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 5px rgb(231, 16, 16);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-flex img:hover {
+    transform: scale(1.05);
+  }
+  

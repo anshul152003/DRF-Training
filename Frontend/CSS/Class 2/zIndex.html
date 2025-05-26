@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z - Index</title>
+    <style>
+        h1{
+            background-color: royalblue;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+        }
+        #container {
+            margin: 0 auto;
+        }
+        img {
+            position: relative;
+        }
+        h2 {
+            position: absolute;
+            color: rgb(0, 8, 255);
+            background-color: antiquewhite;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Z-Index Demo</h1>
+    <div id="container">
+        <h2>Yo Yo Honey Singh</h2>
+        <img src="zIndex.jpg" alt="Yo Yo Honey Singh">
+    </div>
+</body>
+</html>

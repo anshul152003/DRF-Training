@@ -1,0 +1,28 @@
+- HTML 
+- Markup Language ?
+- Hyper Text?
+- Tag ?
+- Element ?
+- Empty tag ?
+- Attributes ?
+- self closing tag ?
+- inline element ?
+- block elements ?
+- inline-block elements
+- replaced-inline elements
+- non-replaced-inline elements
+- root element, parent element, child element
+- list, types of list
+- input type, radio vs checkbox, what problems they solve
+- rowspan-colspan, rows cols property ?
+- table, form : readonly, required, value, name
+- button without button tag
+- !Doctype html ?
+- HTML4 VS HTML5
+- Semantic tag ?
+- base URL & relative URL ?
+- href ?
+- website vs web application69
+- DNS 
+- URL & parts 
+- 

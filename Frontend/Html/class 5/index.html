@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ffd6d6;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffd6d6;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        form {
+            font-size: 18px;
+        }    
+        label {
+            width: 120px;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 250px;
+        }
+        
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        
+        textarea {
+            resize: none;
+        }
+        
+        .dob-input {
+            width: 80px;
+        }
+        
+        .phone-code {
+            display: inline-block;
+            width: 40px;
+            text-align: center;
+        }
+    </style>     
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form>
+            <label for="rollno">Roll No</label>
+            <input type="text" id="rollno" name="rollno" /><br/><br/>
+
+            <label for="stname">Student name</label>
+            <span><input type="text" name="stname" placeholder="First Name" />
+            <input type="text" name="stname" placeholder="Last Name" /></span><br/><br/>
+
+            <label for="name">Father's name</label>
+            <input type="text" name="name" /><br/><br/>
+
+            <label for="dob">Date of Birth</label>
+            <input type="text" class="dob-input" placeholder="Date"/>
+            <input type="text" class="dob-input" placeholder="Month"/>
+            <input type="text" class="dob-input" placeholder="Year"/><br/><br/>
+
+            <label for="num" class=".phone-code">Mobile no</label>
+            <select name="num" id="num">
+                <option value="+91">+91</option>
+                <option value="+1">+1</option>
+                <option value="+44">+44</option>
+                <option value="+81">+81</option>
+            </select>
+            <input type="tel" name="num"/><br/><br/>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter your mail"/><br/><br/>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter your password"/><br/><br/>
+
+            <label for="sex">Gender</label>
+            
+            <input type="radio" name="sex" value="sex" />
+            <label for="sex">Male</label>
+
+            <input type="radio" name="sex" value="sex" />
+            <label for="sex">Female</label><br/><br/>
+
+            <label for="dpt">Department :</label>
+            <input type="checkbox" name="dpt" value="dpt" />
+            <label for="dpt">CSE</label>
+            <input type="checkbox" name="dpt" value="dpt" />
+            <label for="dpt">IT</label>
+            <input type="checkbox" name="dpt" value="dpt" />
+            <label for="dpt">ECE</label>
+            <input type="checkbox" name="dpt" value="dpt" />
+            <label for="dpt">Civil</label>
+            <input type="checkbox" name="dpt" value="dpt" />
+            <label for="dpt">Mech</label><br/><br/>
+
+            <label for="course">Course :</label>
+            <select id="course" name="course">
+              <option value="">-------------------- Select Current Courses --------------------</option>
+              <option value="cs101">Computer Science 101</option>
+              <option value="math201">Mathematics 201</option>
+              <option value="phy301">Physics 301</option>
+            </select>
+            <br/><br/>
+
+            <label for="pic">Student photo :</label>
+            <input type="file" name="pic" id="pic"/><br/><br/>
+
+            <label for="city">City : </label>
+            <input type="text" id="city" name="city" placeholder="City Name"/><br/><br/>
+
+            <label for="add">Address : </label>
+            <input type="address" id="add" name="add" placeholder="Your Address"/><br/><br/>
+            
+
+            <input type="submit" value="Register" id="registerBtn"/>
+            
+        </form>
+    </div>
+</body>
+</html>   

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form>
+            <label for="fname">First Name</label>&nbsp;&nbsp;
+            <input type="text" id="fname" name="fname" required>&nbsp;&nbsp;
+
+            <label for="mname">Middle Name</label>&nbsp;&nbsp;
+            <input type="text" id="mname" name="mname" value="Kumar">&nbsp;&nbsp;
+
+            <label for="lname">Last Name</label>&nbsp;&nbsp;
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="age">Age</label>&nbsp;&nbsp;
+            <input type="number" id="age" name="age" required>&nbsp;&nbsp;
+
+            <label for="email">Email</label>&nbsp;&nbsp;
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">DOB</label>&nbsp;&nbsp;
+            <input type="date" id="dob" name="dob" max="2025-04-14" min="1998-01-01" required><br/><br/>
+
+            <label>Passout Year</label>&nbsp;&nbsp;
+            <label for="year">2024</label>
+            <input type="radio" id="year" name="year" value="2024">
+            <label for="year0">2025</label>
+            <input type="radio" id="year0" name="year" value="2025" checked>
+            <label for="year1">2026</label>
+            <input type="radio" id="year1" name="year" value="2026">
+            <label for="year2">2027</label>
+            <input type="radio" id="year2" name="year" value="2027">
+            <br/><br/>
+
+            <label for="stream">Stream Name</label>&nbsp;&nbsp;
+
+            <input type="checkbox" id="stream" name="stream">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="stream" name="stream">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="stream" name="stream">
+            <label for="js">JavaScript</label><br/><br/>
+
+            <label for="resume">Upload your Resume</label>&nbsp;&nbsp;
+            <input type="file" name="resume" required>&nbsp;&nbsp;
+
+            <label for="tech">Choose Technology</label>&nbsp;&nbsp;
+            <select name="tech">
+                <option value="'java">Java</option>
+                <option value="python">Python</option>
+                <option value="c++" selected>C++</option>
+                <option value="javascript">JavaScript</option>
+            </select><br/><br/>
+
+            <label for="project">Project</label>&nbsp;&nbsp;
+            <textarea maxlength="150" rows="15" cols="15"></textarea> <br/><br/>
+
+            <label for="num">Mobile No.</label>&nbsp;&nbsp;
+            <input type="tel" id="num" name="num" min="10" max="12">&nbsp;&nbsp;
+
+            <label for="income">Income</label>&nbsp;&nbsp;
+            <input type="number" id="income" name="income" step="1000"><br/><br/>
+
+            <label for="pswd">PassWord</label>&nbsp;&nbsp;
+            <input type="password" min="5" id="pswd" name="pswd" required>&nbsp;&nbsp;
+
+            <label for="cnf">Confirm Password</label>&nbsp;&nbsp;
+            <input type="cnf" id="cnf" name="cnf" required><br/><br/>
+
+            <label for="city">City</label>&nbsp;&nbsp;
+            <input type="text" id="city" name="city" value="Indore" readonly ><br/><br/>
+
+            <label for="state">City you want job</label>&nbsp;&nbsp;
+            <select name="city" id="city" size="3" multiple>
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="kolkata">Kolkata</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="pune">Pune</option>
+                <option value="ahmedabad">Ahmedabad</option>
+            </select><br/><br/>
+
+            <label for="tech">Tech Stack</label>&nbsp;&nbsp;
+
+            <input type="checkbox" id="tech" name="tech" checked>
+            <label>MERN STACK</label>
+
+            <input type="checkbox" id="tech" name="tech">
+            <label>Java Developer</label>
+
+            <input type="checkbox" id="tech" name="tech">
+            <label>JavaScript</label><br/><br/>
+
+            <input type="search" id="search" name="search" placeholder="Search here"><br/><br/>
+
+            <input type="submit" value="Submit">&nbsp;&nbsp;
+            <input type="reset" value="Reset"><br/><br/>
+            <button id="editBtn" disabled>Edit</button>
+        </form>
+    </div>
+</body>
+</html>
