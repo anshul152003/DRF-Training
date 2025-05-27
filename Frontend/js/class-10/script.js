@@ -52,3 +52,4 @@ function sum(a, b, ...c) {
 // }
 let digits = sum(10, 54, 75, 87, 99, 80) // sum function take only 3 parameter but below we are passing n parameter 
     // console.log(digits)
+
