@@ -18,7 +18,7 @@
 //Seal Object-> This method allow you to update the value of an object but it is not allow to add new property
 // or delete exisiting property
 
-let obj1 = {
+/*let obj1 = {
     id: 100,
     userName: " Aviraj"
 };
@@ -31,17 +31,17 @@ obj1.DOB = "15-01-2003"; // now i am trying add new property
 console.log(obj1)
 delete obj1.id;
 
-console.log(obj1);
+console.log(obj1); */
 
 // Rest Operator-> In js we have facility to pass n argumant, whatever the parameter exist inside the function matching value
 // store inside the parameter remaint argument will store in rest parameter (...). Rest parameter should be last parameter inside the function
-function sum(a, b, ...c) {
+/*function sum(a, b, ...c) {
     for (let i = 0; i < c.length; i++) {
         console.log(c[i])
     }
     console.log(c)
     return a + b;
-}
+} */
 // u r not allowed to rest passparameter first or any position it should be last
 // function sum(a,...c, b, ) {
 //     for (let i = 0; i < c.length; i++) {
@@ -50,6 +50,39 @@ function sum(a, b, ...c) {
 //     console.log(c)
 //     return a + b;
 // }
-let digits = sum(10, 54, 75, 87, 99, 80) // sum function take only 3 parameter but below we are passing n parameter 
+//let digits = sum(10, 54, 75, 87, 99, 80) // sum function take only 3 parameter but below we are passing n parameter 
     // console.log(digits)
 
+//Destructuring
+
+//Array destructuring
+const arr = [10, 20, [25, 30, [31, 32, 33], 35], 40, 50];
+const [first, second, [third, fourth, [fifth, sixth, seventh], eighth], ninth, tenth] = arr;
+console.log(first, fourth, sixth, eighth); 
+
+// Object destructuring
+/*const obj = {
+    id: 124,
+    iname: 'anshul'
+};
+const {Id,iname} = obj;
+console.log(Id, iname);
+*/
+// Object destructuring with nested object
+/*const coffee = {
+    brand: "abc",
+    price: {
+        rs : 100,
+        usd: 5,
+    },
+    type: {
+        hot: true,
+        cold: {
+            iced: true,
+            frappe: false
+        }
+    }
+};
+
+const {brand, price: {rs, usd}, type: {hot, cold:{iced,frappe}}} = coffee;
+console.log(brand, rs, iced); */
