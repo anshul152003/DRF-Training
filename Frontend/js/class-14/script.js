@@ -17,5 +17,5 @@ function doThreeSumByCurrying(x) {
     };
 };
 
-console.log(doThreeSumByNormal(1, 2, 3)); // 6
-console.log(doThreeSumByCurrying(1)(2)(3)); // 6
+console.log(doThreeSumByNormal(1, 2, 3)); 
+console.log(doThreeSumByCurrying(1)(2)(3));
