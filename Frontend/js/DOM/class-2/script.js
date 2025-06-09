@@ -77,11 +77,12 @@ myBtn.addEventListener("click", () => {
     const para1 = document.createElement("p");
     para1.textContent = "me to UI me dikhega ";
     fourValaDiv[0].appendChild(para1);
+
+    const removebtn = document.createElement("button");
+    removebtn.textContent = "Remove";
+    fourValaDiv[0].appendChild(removebtn);
 });
 
-const removebtn = document.createElement("button");
-removebtn.textContent = "Remove";
-fourValaDiv[0].appendChild(removebtn);
 
 // function removekaregaPko() {
 //     const para1 = document.querySelector("p");
