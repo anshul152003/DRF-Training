@@ -263,9 +263,12 @@
 // fetch("https://jsonplaceholder.typicode.com/users")
 // console.log(fetch("https://jsonplaceholder.typicode.com/users"))
 
-let result = fetch("https://jsonplaceholder.typicode.com/users");
-console.log(result);
-let arr = [];
+// let result = fetch("https://jsonplaceholder.typicode.com/users");
+// console.log(result);
+// let arr = [];
 
-result.then((data) => console.log(data.json().then(res => arr.push(res))));
-console.log(arr)
+// result.then((data) => console.log(data.json().then(res => arr.push(res))));
+// console.log(arr)
+
+
+const app = document.getElementById("app");
