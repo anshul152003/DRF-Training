@@ -66,34 +66,20 @@ const myBtn = document.querySelector("button");
 // console.log(para1);
 // fourValaDiv[0].prepend(para1);
 
-// function addKaregaPko() {
-//     const para1 = document.createElement("p");
-//     para1.textContent = "me to UI me dikhega ";
-//     fourValaDiv[0].appendChild(para1);
-// }
-
-// myBtn.addEventListener("click", addKaregaPko());
-myBtn.addEventListener("click", () => {
+function addKaregaPko() {
     const para1 = document.createElement("p");
     para1.textContent = "me to UI me dikhega ";
     fourValaDiv[0].appendChild(para1);
+}
 
-    const removebtn = document.createElement("button");
-    removebtn.textContent = "Remove";
-    fourValaDiv[0].appendChild(removebtn);
-});
-
-
-// function removekaregaPko() {
-//     const para1 = document.querySelector("p");
-//     fourValaDiv[0].removeChild(para1);
-// }
-
-// removebtn.addEventListener("click",removekaregaPko());
-removebtn.addEventListener("click", () => {
-    const para1 = document.querySelector("p");
-    fourValaDiv[0].removeChild(para1);
-});
+// myBtn.addEventListener("click", addKaregaPko());
+// myBtn.addEventListener("click", () => {
+//     const para1 = document.createElement("p");
+//     //step-2 element ke andar text daal deayas hai
+//     para1.textContent = "me to UI me dikhega ";
+//     //step-3 element ko div me append kar deaya hai
+//     fourValaDiv[0].appendChild(para1);
+// });
 
 
 //2nd way 
