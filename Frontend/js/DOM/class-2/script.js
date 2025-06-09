@@ -57,8 +57,8 @@
 // });
 
 // fourValaDiv[0].prepend(para1);
-const fourValaDiv = document.getElementsByClassName("four");
-const myBtn = document.querySelector("button");
+// const fourValaDiv = document.getElementsByClassName("four");
+// const myBtn = document.querySelector("button");
 // console.log("div hu me", fourValaDiv)
 // console.log("myBtn", myBtn)
 // const para1 = document.createElement("p");
@@ -66,21 +66,46 @@ const myBtn = document.querySelector("button");
 // console.log(para1);
 // fourValaDiv[0].prepend(para1);
 
-function addKaregaPko() {
-    const para1 = document.createElement("p");
-    para1.textContent = "me to UI me dikhega ";
-    fourValaDiv[0].appendChild(para1);
-}
+// function addKaregaPko() {
+//     const para1 = document.createElement("p");
+//     para1.textContent = "me to UI me dikhega ";
+//     fourValaDiv[0].appendChild(para1);
+// }
 
 // myBtn.addEventListener("click", addKaregaPko());
 // myBtn.addEventListener("click", () => {
 //     const para1 = document.createElement("p");
-//     //step-2 element ke andar text daal deayas hai
 //     para1.textContent = "me to UI me dikhega ";
-//     //step-3 element ko div me append kar deaya hai
 //     fourValaDiv[0].appendChild(para1);
 // });
 
 
 //2nd way 
 // myBtn.addEventListener("click", () => { addKaregaPko() });
+
+const contain = document.getElementsByClassName('four');
+const addBtn = document.getElementsByTagName("button")[0];
+
+addBtn.addEventListener("click", () => {
+    const para1 = document.createElement("p");
+    para1.textContent = "me to UI me dikhega ";
+    contain[0].appendChild(para1);
+
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = 'Remove';
+    para1.appendChild(removeBtn);
+
+    removeBtn.addEventListener("click", () => {
+    contain[0].removeChild(para1);
+    });
+
+    const upbtn = document.createElement('button');
+    upbtn.textContent = 'Update';
+    para1.appendChild(upbtn);
+
+    upbtn.addEventListener("click", () => {
+        para1.textContent = "Updated Text";
+        contain.appendChild(para1);
+    });
+
+});
