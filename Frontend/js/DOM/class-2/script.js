@@ -67,23 +67,22 @@ const myBtn = document.querySelector("button");
 // fourValaDiv[0].prepend(para1);
 
 function addKaregaPko() {
-    //step-1 element create kar leaya hai
     const para1 = document.createElement("p");
-    //step-2 element ke andar text daal deayas hai
     para1.textContent = "me to UI me dikhega ";
-    //step-3 element ko div me append kar deaya hai
     fourValaDiv[0].appendChild(para1);
 }
 
-// myBtn.addEventListener("click", addKaregaPko());
-// myBtn.addEventListener("click", () => {
-//     const para1 = document.createElement("p");
-//     //step-2 element ke andar text daal deayas hai
-//     para1.textContent = "me to UI me dikhega ";
-//     //step-3 element ko div me append kar deaya hai
-//     fourValaDiv[0].appendChild(para1);
-// });
+removebtn.addEventListener("click", () => {
+    fourValaDiv[0].removeChild(para1);
+});
+
+myBtn.addEventListener("click", addKaregaPko());
+myBtn.addEventListener("click", () => {
+    const para1 = document.createElement("p");
+    para1.textContent = "me to UI me dikhega ";
+    fourValaDiv[0].appendChild(para1);
+});
 
 
 //2nd way 
-myBtn.addEventListener("click", () => { addKaregaPko() });
+// myBtn.addEventListener("click", () => { addKaregaPko() });
