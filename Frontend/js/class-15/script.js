@@ -269,6 +269,3 @@
 
 // result.then((data) => console.log(data.json().then(res => arr.push(res))));
 // console.log(arr)
-
-
-const app = document.getElementById("app");
