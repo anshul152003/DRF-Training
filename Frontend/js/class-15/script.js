@@ -1,3 +1,13 @@
+console.log("me hu sync code");
+setTimeout(() => {
+    console.log("me hu async code");
+}, 2000);
+
+console.log("me hu sync code 2");
+setInterval(() => {
+    console.log("me hu async code 2");
+}, 1000);
+
 //Asynchronous Programming:
 
 //closure : 
