@@ -21,14 +21,18 @@ function add(){
     list.appendChild(deleteButton);
 
     updateButton.addEventListener("click", () => {
-        if (updateButton.textContent === "update") {
-            inputBox.value = para.innerText;
-            updateButton.textContent = "save";
-        } else {
+        const saveButton = document.createElement("button");
+        saveButton.textContent = "save";
+        inputBox.value = para.innerText;
+        list.appendChild(saveButton);
+        list.removeChild(updateButton);
+
+        saveButton.addEventListener("click", () => {
             para.innerText = inputBox.value;
             inputBox.value = "";
-            updateButton.textContent = "update";
-        }
+            list.removeChild(saveButton);
+            list.appendChild(updateButton);
+        });
     });
     deleteButton.addEventListener("click", () => {
         list.removeChild(para);
