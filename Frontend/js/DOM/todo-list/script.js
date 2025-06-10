@@ -34,6 +34,7 @@ function add(){
             list.appendChild(updateButton);
         });
     });
+
     deleteButton.addEventListener("click", () => {
         list.removeChild(para);
         list.removeChild(updateButton);
