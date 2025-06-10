@@ -20,3 +20,9 @@ console.log(myDiv.getAttribute("data-custom"));
 //if you want to remove an attribute
 myDiv.removeAttribute("data-custom");
 console.log(myDiv.getAttribute("data-custom")); // should be null now
+
+
+// myDiv.setAttribute("style", "background-color: red; color: white;");
+myDiv.style.backgroundColor = "blue"; // This will override the inline style
+myDiv.style.fontSize = "20px";
+myDiv.style.color = "aqua"; 
