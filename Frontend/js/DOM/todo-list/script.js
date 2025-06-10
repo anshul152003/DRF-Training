@@ -41,8 +41,12 @@ function add(){
     });
 }
 
-
-
 mybtn.addEventListener("click", () => {
-    add();
+    if(inputBox.value === "") {
+        alert("Please enter a task");
+        return;
+    }
+    else{
+        add();
+    }
 })
