@@ -5,35 +5,23 @@
 }
 
 body {
-    min-height: 100vh;
-    height: 110%;
     text-align: center;
-    font-family: sans-serif;
-    font-weight: bold;
     color: rgb(255, 255, 255);
     margin: 0;
     background-color: rgb(131, 165, 199);
 
 }
 
-label {
-    font-size: 1.2rem;
-}
-
-.container {
+#container {
     text-align: center;
     width: 40%;
-    height: 500px;
+    height: 350px;
     padding-top: 30px;
     margin: 3% 15% 0 5%;
     box-shadow: 0 0 15px black;
     background-color: #1f1f1f;
     border-radius: 5px;
-}
-
-.box {
-    display: flex;
-    text-align: center;
+    position: relative;
 }
 
 .f1 {
@@ -42,33 +30,15 @@ label {
     padding: 15px;
 }
 
-.f2 {
-    display: flex;
-    padding: 15px;
-}
-
-.c {
-    display: flex;
-    margin-left: 15%;
-}
-
-.c1 {
-    margin: 6px;
-    margin-top: 0;
-    display: flex;
-}
-
 .display {
+    position: absolute;
+    top: 5em;
+    left: 10em;
     text-align: left;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     height: 500px;
     width: 50%;
-}
-
-.display h2 {
-    margin-left: 20%;
-    color: black;
 }
 
 .f1 input {
@@ -83,7 +53,7 @@ label {
     color: rgb(78, 77, 77);
 }
 
-.submit {
+#submit {
     background-color: white;
     font-weight: bold;
     font-size: 1rem;
@@ -95,7 +65,7 @@ label {
     cursor: pointer;
 }
 
-.submit:hover {
+#submit:hover {
     background-color: #3d3d3d;
     color: white;
 }
