@@ -13,9 +13,9 @@ function rotateClockHands() {
   const minuteDeg = minutes * 6 + seconds * 0.1;
   const hourDeg = hours * 30 + minutes * 0.5; 
 
-//   secondHand.style.transform = `rotate(${secondDeg}deg)`;
-//   minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
-//   hourHand.style.transform = `rotate(${hourDeg}deg)`;
+  secondHand.style.transform = `rotate(${secondDeg}deg)`;
+  minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
+  hourHand.style.transform = `rotate(${hourDeg}deg)`;
 }
 
 setInterval(rotateClockHands, 1000);

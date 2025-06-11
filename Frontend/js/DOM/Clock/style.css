@@ -19,67 +19,49 @@ body {
     border-radius: 50%;
     position: relative;
     top: 18%;
-    /* left: 40em; */
     background: white;
 }
 
 .hand {
-    position: absolute;
-    width: 50%;
-    height: 2px;
-    background: #333;
-    top: 50%;
-    transform-origin: 100% 50%;
-    transform: rotate(90deg);
-    transition: all 0.05s ease-in-out;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: translateX(-50%) rotate(90deg);
+  background: #333;
 }
 
-#hour {
-    /* height: 4px;
-    width: 35%;
-    background: #000;
-    margin-left: 2em;
-    transform: rotate(40deg); */
-    position: absolute;
-    width: 50%;
-    height: 2px;
-    background: #333;
-    top: 50%;
-    transform-origin: 100% 50%;
-    transform: rotate(90deg);
-    transition: all 0.05s ease-in-out;
+.hour {
+  height: 60px;
+  width: 6px;
+  background: #000;
+  z-index: 3;
 }
 
-#minute {
-    /* height: 3px;
-    width: 45%;
-    background: #666;
-    margin-left: 0.74em; */
-    position: absolute;
-    width: 50%;
-    height: 2px;
-    background: #333;
-    top: 50%;
-    transform-origin: 100% 50%;
-    transform: rotate(230deg);
-    transition: all 0.05s ease-in-out;
+.minute {
+  height: 90px;
+  width: 4px;
+  background: #555;
+  z-index: 2;
 }
 
-#second {
-    height: 2px;
-    width: 50%;
-    background: orangered;
+.second {
+  height: 100px;
+  width: 2px;
+  background: red;
+  z-index: 1;
 }
 
 .center {
-    width: 12px;
-    height: 12px;
-    background: #333;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
 }
 
 .numbers {
@@ -102,19 +84,19 @@ body {
 #twelve {
     position: absolute;
     top: -1em;
-    left: 4.5em
+    left: 4.8em
 }
 
 #one {
     position: absolute;
-    top: -0.4em;
+    top: -0.1em;
     left: 8.2em
 }
 
 #two {
     position: absolute;
-    top: 1.5em;
-    left: 10em
+    top: 2em;
+    left: 10.6em
 }
 
 #three {
@@ -126,47 +108,47 @@ body {
 #four {
     position: absolute;
     top: 8em;
-    left: 11em;
+    left: 10.3em;
 }
 
 #five {
     position: absolute;
-    top: 11em;
-    left: 9.5em;
+    top: 10.5em;
+    left: 8.6em;
 }
 
 #six {
     position: absolute;
-    top: 12.5em;
-    left: 6.2em;
+    top: 11em;
+    left: 4.8em;
 }
 
 #seven {
     position: absolute;
-    top: 11em;
-    left: 2.8em;
+    top: 10em;
+    left: 2em;
 }
 
 #eight {
     position: absolute;
     top: 8em;
-    left: 1.3em;
+    left: -0.1em;
 }
 
 #nine {
     position: absolute;
     top: 5em;
-    left: 0.5em;
+    left: -0.8em;
 }
 
 #ten {
     position: absolute;
-    top: 1.5em;
-    left: 2em;
+    top: 2.4em;
+    left: -0.1em;
 }
 
 #eleven {
     position: absolute;
-    top: -0.4em;
-    left: 3.5em;
+    top: 0.1em;
+    left: 2em;
 }
