@@ -1,71 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin: 0;
-    background-color: rgb(131, 165, 199);
-
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
 }
 
-#container {
-    text-align: center;
-    width: 40%;
-    height: 350px;
-    padding-top: 30px;
-    margin: 3% 15% 0 5%;
-    box-shadow: 0 0 15px black;
-    background-color: #1f1f1f;
-    border-radius: 5px;
-    position: relative;
+input {
+  padding: 8px;
+  width: 250px;
 }
 
-.f1 {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.display {
-    position: absolute;
-    top: 5em;
-    left: 10em;
-    text-align: left;
-    /* display: flex; */
-    flex-direction: column;
-    height: 500px;
-    width: 50%;
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 260px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: left;
 }
 
-.f1 input {
-    background-color: white;
-    border-radius: 5px;
-    height: 35px;
-    padding: 10px;
+.card div {
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
-.f1 input::placeholder {
-    font-weight: bold;
-    color: rgb(78, 77, 77);
-}
-
-#submit {
-    background-color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 10px;
-    border: 0;
-    width: 100px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px;
-    cursor: pointer;
-}
-
-#submit:hover {
-    background-color: #3d3d3d;
-    color: white;
+.card span:first-child {
+  font-weight: bold;
 }

@@ -10,26 +10,27 @@
 
 <body>
 
-    <div id="container">
-        <h2>Form</h2>
-        <form id="form">
-            <input type="text" id="fname" placeholder="Enter first Name" required /><br /><br />
-            <input type="text" id="lname" placeholder="Enter last Name" required /><br /><br />
+    <div id="form">
+        <h2>Enter Details</h2>
+        <form id="userForm">
+            <input type="text" id="fname" placeholder="Enter First Name" required /><br /><br />
+            <input type="text" id="lname" placeholder="Enter Last Name" required /><br /><br />
             <input type="email" id="email" placeholder="Enter Email" required /><br /><br />
             <input type="text" id="course" placeholder="Enter Course" required /><br /><br />
-            <button type="submit" id="submit">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
 
     <div id="card" style="display: none;">
         <div class="card">
-            <div><span>First Name:</span> <span id="cardFirstName"></span></div>
-            <div><span>Last Name:</span> <span id="cardLastName"></span></div>
+            <div><span>First Name:</span> <span id="cardFname"></span></div>
+            <div><span>Last Name:</span> <span id="cardLname"></span></div>
             <div><span>Email:</span> <span id="cardEmail"></span></div>
             <div><span>Course:</span> <span id="cardCourse"></span></div>
-            <button onclick="showform()">Default</button>
+            <button onclick="showForm()">Default</button>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 

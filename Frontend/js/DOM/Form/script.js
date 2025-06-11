@@ -1,31 +1,26 @@
-const form = document.getElementById("form");
-const card = document.getElementById("card");
-const formSection = document.getElementById("container");
+const form = document.getElementById("userForm");
+const formSection = document.getElementById("form");
+const cardSection = document.getElementById("card");
 
-const fnameInput = document.getElementById("fname");
-const lnameInput = document.getElementById("lname");
-const emailInput = document.getElementById("email");
-const courseInput = document.getElementById("course");
-
-const cardFirst = document.getElementById("cardFirstName");
-const cardLast = document.getElementById("cardLastName");
-const cardEmail = document.getElementById("cardEmail");
-const cardCourse = document.getElementById("cardCourse");
-
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    cardFirst.innerText = fnameInput.value;
-    cardLast.innerText = lnameInput.value;
-    cardEmail.innerText = emailInput.value;
-    cardCourse.innerText = courseInput.value;
+    const fname = document.getElementById("fname").value;
+    const lname = document.getElementById("lname").value;
+    const email = document.getElementById("email").value;
+    const course = document.getElementById("course").value;
 
-    form.style.display = "none";
-    card.style.display = "block";
+    document.getElementById("cardFname").textContent = fname;
+    document.getElementById("cardLname").textContent = lname;
+    document.getElementById("cardEmail").textContent = email;
+    document.getElementById("cardCourse").textContent = course;
+
+    formSection.style.display = "none";
+    cardSection.style.display = "block";
 });
 
-function showform() {
+function showForm() {
     form.reset();
     formSection.style.display = "block";
-    card.style.display = "none";
+    cardSection.style.display = "none";
 }
