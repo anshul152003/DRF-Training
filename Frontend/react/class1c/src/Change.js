@@ -35,7 +35,7 @@ function Change(){
             <button onClick={() => {changeData("name", "Aviraj")}}>Change Name</button>
 
             <p>Age: {data.age}</p>
-            <button onClick={() => {changeData("age", "22")}}>Change Age</button>
+            <button onClick={() => {changeData("age", 22)}}>Change Age</button>
 
             <p>City: {data.city}</p>
             <button onClick={() => {changeData("city", "Bhopal")}}>Change City</button>
