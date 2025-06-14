@@ -5,7 +5,7 @@
 // Stateful Component Example using useState
 import React, { useState } from 'react';
 function App() {
-
+  
   const [stateName, setStateName] = useState("Anshul");
 
   // function change(){
@@ -21,7 +21,6 @@ function App() {
     </div>
   )
 }
-
 export default App;
 
 // Example of a Stateless Functional Component
