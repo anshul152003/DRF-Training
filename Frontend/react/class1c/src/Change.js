@@ -15,6 +15,7 @@ function Change(){
             return {...previousData, [newData]: newValue}
         });
     }
+    
     return(
         // <div>
         //     <p>Name: {data.name}</p>
