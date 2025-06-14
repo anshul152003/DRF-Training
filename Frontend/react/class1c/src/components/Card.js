@@ -1,4 +1,3 @@
-import "../App.css"
 function Card({myName,myAge,changeAge}) {
 
 console.log(myName)
@@ -16,7 +15,7 @@ console.log(myName)
 
       <p>My Qualification is B.tech </p>
       <button>change Qualification</button>
-      
+
       <p>My state  is M.P.</p>
       <button>change state</button>
     </div>
