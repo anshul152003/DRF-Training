@@ -67,7 +67,7 @@ function App() {
     console.log(images);
     return (
         <div className='flex-container'>
-            {images.map((event,index) => ( <div key={index}><Gallery setingData={event}/></div>))}
+            {images?.map((event,index) => ( <div key={index}><Gallery setingData={event}/></div>))}
         </div>
     );    
 }
