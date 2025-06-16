@@ -6,18 +6,18 @@ import SingleCard from "./components/SingleCard";
 function App() {
 	//useEffect-> it is a hook which is mostly used to perfrom side effects
 	//sideeffects -> Any task or operation which take amount of time that is known as
-	// side effects. for example -> fetching data from the api.
+	//side effects. for example -> fetching data from the api.
 
 	// let arr = [];// it is stateless
 	const [arr, setArr] = useState([])
 	const [loader, setLoader] = useState(false)
 	let [count, setCount] = useState(1)
 	const [singleData, setSingleData] = useState();
+
 	// async function fetchData(url) {
 	// 	try {
 	// 		const response = await fetch(url);
 	// 		console.log("response", response);
-
 	// 		const finalAns = await response.json()
 	// 		console.log("json-data", finalAns[0])
 	// 		console.log("Data coming from an api call", finalAns)
@@ -26,21 +26,18 @@ function App() {
 	// 		// 	arr.push(finalAns[i])
 	// 		// }
 	// 		// arr.push(finalAns)
-
 	// 	}
 	// 	catch (error) {
 	// 		console.log("Error occured", error);
 	// 	}
-
 	// }
-	// fetchData("https://jsonplaceholder.typicode.com/users");
+
+	// first version of useEffect
 	// useEffect(()=>{
 	// 	fetchData("https://jsonplaceholder.typicode.com/users");
 	// })
 
-
-
-
+	//Second version of useEffect
 	// useEffect(() => {
 	// 	fetchData("https://jsonplaceholder.typicode.com/users");
 	// }, [])
@@ -50,8 +47,6 @@ function App() {
 	function countHandler() {
 		setCount(count++)
 	}
-
-
 	async function fetchSinglData(url) {
 		try {
 			setLoader(true)
@@ -71,8 +66,6 @@ function App() {
 		setLoader(false)
 
 	}
-
-
 
 	//3rd case 
 	useEffect(() => {
