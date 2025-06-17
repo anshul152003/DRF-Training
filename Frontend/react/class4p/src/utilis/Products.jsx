@@ -7,6 +7,7 @@ export const products = [
     rating: 4.5,
     madeBy: "Burger Haven",
     quantity: 30,
+    category: "Fast Food",
     description: "Indulge in our signature Cheese Burger, a masterpiece crafted with passion and precision at Burger Haven. This mouth-watering creation features a perfectly seasoned, juicy beef patty grilled to perfection, creating that irresistible smoky flavor that burger enthusiasts crave.",
   },
   {
@@ -17,6 +18,7 @@ export const products = [
     rating: 4.2,
     madeBy: "Pizza Delight",
     quantity: 15,
+    category: "Fast Food",
     description: "Experience the garden-fresh goodness of our Veggie Pizza, a colorful celebration of nature's finest ingredients brought to you by Pizza Delight. Our artisan pizzaiolos start with hand-stretched dough that's been fermented for 24 hours, creating the perfect balance of chewiness and crispness."
   },
   {
@@ -27,6 +29,7 @@ export const products = [
     rating: 4.7,
     madeBy: "Himalayan Bites",
     quantity: 50,
+    category: "Asian & Pasta",
     description: "Transport your taste buds to the majestic Himalayas with our authentic Steamed Momos, lovingly prepared by Himalayan Bites using traditional recipes passed down through generations. These delicate dumplings are a testament to the rich culinary heritage of Tibet and Nepal."
   },
   {
@@ -37,6 +40,7 @@ export const products = [
     rating: 4.3,
     madeBy: "Chow Mein Express",
     quantity: 20,
+    category: "Asian & Pasta",
     description: "Savor the authentic flavors of Indo-Chinese cuisine with our signature Hakka Noodles from Chow Mein Express. This beloved street food favorite combines the best of Chinese cooking techniques with Indian spice preferences, creating a unique fusion that has captured hearts across the country."
   },
   {
@@ -47,6 +51,7 @@ export const products = [
     rating: 4.6,
     madeBy: "Pasta Point",
     quantity: 25,
+    category: "Asian & Pasta",
     description: "Indulge in the ultimate comfort food experience with our luxurious Creamy Alfredo Pasta, masterfully prepared at Pasta Point. This classic Italian-American dish represents the pinnacle of creamy, cheesy perfection."
   },
   {
@@ -57,6 +62,7 @@ export const products = [
     rating: 4.1,
     madeBy: "Snack Shack",
     quantity: 40,
+    category: "Asian & Pasta",
     description: "Experience the classic American diner tradition with our towering Club Sandwich from Snack Shack. This architectural marvel of sandwich-making consists of three layers of perfectly toasted bread, creating a satisfying stack that's both visually impressive and incredibly delicious."
   },
   {
@@ -67,6 +73,7 @@ export const products = [
     rating: 4.5,
     madeBy: "Street Delight",
     quantity: 100,
+    category: "Indian Street",
     description: "Discover the quintessential Indian street food experience with our golden, crispy Samosas from Street Delight. These triangular parcels of joy are handcrafted using traditional techniques that have been perfected over generations. The outer shell is made from a special dough blend of refined flour, a touch of oil, and water, kneaded to achieve the perfect consistency that creates those beautiful flaky layers when fried."
   },
   {
@@ -77,6 +84,7 @@ export const products = [
     rating: 4.3,
     madeBy: "Rajasthani Bites",
     quantity: 60,
+    category: "Indian Street",
     description: "Embark on a culinary journey to the royal state of Rajasthan with our authentic Kachori from Rajasthani Bites. This traditional deep-fried delicacy is a testament to the rich culinary heritage of Indian cuisine, particularly the flaky, layered pastries that originated in the desert state."
   },
   {
@@ -87,6 +95,7 @@ export const products = [
     rating: 4.7,
     madeBy: "Sweet Street",
     quantity: 80,
+    category: "Indian Sweets",
     description: "Indulge in the mesmerizing swirls of our traditional Jalebi from Sweet Street, a dessert that perfectly embodies the artistry and sweetness of Indian confectionery. These golden, pretzel-shaped delicacies are created through a time-honored process that requires skill, patience, and precision. The batter is prepared using refined flour fermented with yogurt and a pinch of baking soda, creating that signature tangy flavor and airy texture."
   },
   {
@@ -97,6 +106,7 @@ export const products = [
     rating: 4.2,
     madeBy: "Gujju Corner",
     quantity: 70,
+    category: "Indian Street",
     description: "Experience the authentic taste of Gujarat with our crispy Fafda from Gujju Corner, a beloved breakfast snack that's an integral part of Gujarati culture and tradition. These golden yellow strips are made from gram flour (besan), which is the primary ingredient that gives fafda its distinctive flavor and protein-rich nutritional profile. The preparation begins with creating a smooth batter using fresh gram flour."
   },
   {
@@ -107,6 +117,7 @@ export const products = [
     rating: 4.6,
     madeBy: "Taste of Gujarat",
     quantity: 50,
+    category: "Indian Street",
     description: "Discover the delicate artistry of Gujarati cuisine with our silky-smooth Khandvi from Taste of Gujarat, often regarded as one of the most sophisticated and challenging dishes in Indian cooking. This elegant appetizer showcases the culinary finesse that Gujarat is famous for, requiring exceptional skill and timing to achieve perfection. The base is prepared using gram flour (besan) and yogurt, which are whisked together to create a smooth, lump-free mixture."
   },
   {
@@ -117,6 +128,7 @@ export const products = [
     rating: 4.3,
     madeBy: "South Spice",
     quantity: 60,
+    category: "Indian Street",
     description: "Embark on a South Indian culinary adventure with our authentic Masala Dosa from South Spice, a golden, crispy crepe that represents the heart and soul of South Indian cuisine. This iconic dish begins with a fermented batter made from a perfect blend of rice and black lentils (urad dal), soaked separately overnight and then ground to a smooth consistency. The fermentation process, which takes 8-12 hours, develops the characteristic tangy flavor and creates the natural leavening that gives dosa."
   },
   {
@@ -127,6 +139,7 @@ export const products = [
     rating: 4.0,
     madeBy: "Tamil Treats",
     quantity: 50,
+    category: "Indian Street",
     description: "Start your day the South Indian way with our traditional Idli Sambar from Tamil Treats, a wholesome combination that perfectly balances nutrition and flavor. These cloud-like steamed rice cakes are prepared using the ancient technique of fermentation, where rice and black gram lentils are soaked, ground separately, and combined to create a batter that ferments naturally for 8-10 hours. This fermentation process not only develops the characteristic mild sourness but also enhances the nutritional value."
   },
   {
@@ -137,6 +150,7 @@ export const products = [
     rating: 4.2,
     madeBy: "Wok & Roll",
     quantity: 35,
+    category: "Asian & Pasta",
     description: "Experience the perfect harmony of Indo-Chinese flavors with our signature Veg Fried Rice from Wok & Roll, where traditional Chinese wok techniques meet Indian taste preferences. This colorful and aromatic dish starts with premium basmati rice that's cooked to perfection - each grain separate, fluffy, and slightly firm to the bite. The rice is cooled completely before stir-frying, which is crucial for achieving that authentic texture that doesn't become mushy during the high-heat cooking process."
   },
   {
@@ -147,6 +161,7 @@ export const products = [
     rating: 4.6,
     madeBy: "Delhi Flavors",
     quantity: 32,
+    category: "Nasta",
     description: "Immerse yourself in the vibrant street food culture of North India with our authentic Chole Bhature from Delhi Flavors, a combination that perfectly represents the hearty and bold flavors of Punjabi cuisine. The chole (chickpea curry) is prepared using premium kabuli chana that's soaked overnight and slow-cooked until tender while maintaining their shape and texture. Our secret lies in the complex spice blend that includes whole garam masala, bay leaves, cinnamon, cardamom, and black tea for that distinctive dark color and rich flavor."
   },
   {
@@ -157,6 +172,7 @@ export const products = [
     rating: 4.4,
     madeBy: "Indori Tiffin",
     quantity: 50,
+    category: "Indian Street",
     description: "Begin your morning with the comfort of our traditional Poha from Indori Tiffin, a beloved breakfast dish that epitomizes the simplicity and flavor of Indian home cooking. This humble yet satisfying dish transforms flattened rice into a colorful, aromatic meal that's both nutritious and light on the stomach. We start with premium quality thick poha (flattened rice) that's gently rinsed and drained to achieve the perfect texture - soft yet retaining a slight bite."
   },
   {
@@ -167,6 +183,7 @@ export const products = [
     rating: 4.9,
     madeBy: "Sweet Treats",
     quantity: 70,
+    category: "Indian Sweets",
     description: "Indulge in the ultimate Indian dessert experience with our melt-in-your-mouth Gulab Jamun from Sweet Treats, often called the king of Indian sweets. These golden-brown spheres of pure indulgence are crafted using traditional methods that have been passed down through generations of halwais (sweet makers). The base is prepared using khoya (milk solids) that's made by slowly reducing full-fat milk until it reaches the perfect consistency, combined with a small amount of all-purpose flour and a pinch of baking soda for that ideal texture."
   },
   {
@@ -177,6 +194,7 @@ export const products = [
     rating: 4.6,
     madeBy: "Gujarati Delights",
     quantity: 60,
+    category: "Nasta",
     description: "Discover the light and airy delight of our traditional Dhokla from Gujarati Delights, a steamed savory cake that showcases the genius of Gujarati cuisine in transforming simple ingredients into extraordinary flavors. This protein-rich snack begins with a carefully balanced batter made from gram flour (besan) and rice flour, which provides the perfect texture and nutritional profile. The batter is mixed with yogurt for tanginess, ginger-green chili paste for heat, and a pinch of turmeric for color and health benefits."
   },
   {
@@ -187,6 +205,7 @@ export const products = [
     rating: 4.8,
     madeBy: "Bengali Sweets",
     quantity: 65,
+    category: "Indian Sweets",
     description: "Experience the delicate sweetness of our authentic Rasgulla from Bengali Sweets, a legendary dessert that originated in Bengal and has captured hearts across India with its unique texture and subtle flavors. These snow-white, spongy cheese balls are created through a meticulous process that requires skill, patience, and timing. Fresh chenna (cottage cheese) is prepared by curdling full-fat milk with lemon juice, then carefully draining and pressing to remove excess whey while maintaining the perfect moisture content."
   },
   {
@@ -197,6 +216,7 @@ export const products = [
     rating: 4.9,
     madeBy: "Palates Desire",
     quantity: 45,
+    category: "Indian Sweets",
     description: "Elevate your dessert experience with our exquisite Rasmalai from Palates Desire, often regarded as the crown jewel of Indian sweets that combines the delicate texture of cottage cheese with the richness of flavored milk. This sophisticated dessert begins with preparing perfect chenna (cottage cheese) discs that are flatter and wider than traditional rasgullas, allowing for better absorption of the milk. The chenna is made from the finest quality full-fat milk, curdled gently and pressed to achieve the ideal consistency that's neither too dry nor too moist."
   },
   {
@@ -207,6 +227,7 @@ export const products = [
     rating: 4.3,
     madeBy: "MP Snacks Hub",
     quantity: 90,
+    category: "Nasta",
     description: "Savor the rustic charm of our homestyle Aalu Bada from MP Snacks Hub, a beloved comfort food that represents the heart of Indian street food culture. These golden, crispy spheres are made with love using traditional recipes that have been perfected over generations in the kitchens of Madhya Pradesh. The preparation begins with selecting perfect potatoes that are boiled until tender, then mashed while still warm to achieve that smooth, creamy texture."
   },
   {
@@ -217,6 +238,7 @@ export const products = [
     rating: 4.7,
     madeBy: "South Flavors",
     quantity: 75,
+    category: "Nasta",
     description: "Embrace the wholesome goodness of South Indian tradition with our premium Idli Sambar from South Flavors, a nutritious combination that perfectly balances health and taste. Our idlis are crafted using the time-honored method of natural fermentation, where premium quality rice and urad dal are soaked separately for hours, then ground in traditional stone grinders to achieve that perfect texture."
   },
   {
@@ -227,6 +249,7 @@ export const products = [
     rating: 4.4,
     madeBy: "Halwai Gully",
     quantity: 55,
+    category: "Indian Sweets",
     description: "Delight in the intricate beauty of our traditional Imarti from Halwai Gully, a stunning flower-shaped dessert that showcases the artistic heritage of Indian confectionery. This elaborate sweet requires exceptional skill and patience to create, as each piece is individually crafted to achieve that perfect floral pattern."
   },
   {
@@ -237,6 +260,7 @@ export const products = [
     rating: 4.5,
     madeBy: "Mumbai Tadka",
     quantity: 85,
+    category: "Nasta",
     description: "Experience the iconic taste of Mumbai with our authentic Vada Pav from Mumbai Tadka, affectionately known as the 'burger of Mumbai' that captures the essence of the city's vibrant street food culture. This beloved snack consists of a spicy potato fritter (vada) sandwiched between soft pav bread, creating a perfect harmony of textures and flavors."
   },
   {
@@ -247,6 +271,7 @@ export const products = [
     rating: 4.6,
     madeBy: "Punjabi Rasoi",
     quantity: 65,
+    category: "Nasta",
     description: "Indulge in the hearty warmth of our traditional Aalu Paratha from Punjabi Rasoi, a beloved North Indian flatbread that embodies the comfort and richness of Punjabi home cooking. This stuffed bread is a perfect example of how simple ingredients can be transformed into something extraordinary through skill and love."
   }
 ];
