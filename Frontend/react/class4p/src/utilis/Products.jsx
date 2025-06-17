@@ -121,7 +121,7 @@ export const products = [
     description: "Discover the delicate artistry of Gujarati cuisine with our silky-smooth Khandvi from Taste of Gujarat, often regarded as one of the most sophisticated and challenging dishes in Indian cooking. This elegant appetizer showcases the culinary finesse that Gujarat is famous for, requiring exceptional skill and timing to achieve perfection. The base is prepared using gram flour (besan) and yogurt, which are whisked together to create a smooth, lump-free mixture."
   },
   {
-    image: "https://imgs.search.brave.brave.com/XTdykdKm39X5VD7QPZiWbSHTQGfASMcPB34HJ7U6_ws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTIw/NTQ4MjI5MC9waG90/by9tYXNhbGEtZG9z/YS1vbi1iYW5hbmEt/bGVhZi13aXRoLWJv/dGgtc2FtYmFyLWFu/ZC1jb2NvbnV0LWNo/dXRuZXktc291dGgt/aW5kaWFuLXZlZ2V0/YXJpYW4tc25hY2su/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PUZjdWpKTXBpelN2/WUVqNS0yanNwcTV3/b1o0RjVIbG9YdU9Y/MzNDRDFNZUk9",
+    image: "https://imgs.search.brave.com/T9Bn77bVL4L4Ow4-4jrq6PsDQdNOO8KSpEffXIc-xXk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDc1/NzEyMzQwL3Bob3Rv/L21hc2FsYS1zaW4u/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PTNaRUVnWFdUR3Uw/aUdKdUVmZEhNdjJt/cE9xR2hxYnNFTk9U/ZDNnemVaV2M9",
     productName: "Masala Dosa",
     productPrice: 99,
     actualPrice: 129,
