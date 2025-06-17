@@ -1,0 +1,55 @@
+/* NavBar.css */
+
+.navbar {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-link:hover {
+  color: #e0e0e0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.active {
+  color: #ffd900;
+  font-weight: 600;
+}
+
+.active::after {
+  width: 100%;
+  background: #ff0000;
+}
