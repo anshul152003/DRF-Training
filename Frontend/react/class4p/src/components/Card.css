@@ -74,3 +74,34 @@
   gap: 2em;
   flex-wrap: wrap;
 }
+
+.cart-container {
+  margin-top: 12px;
+  display: block;
+}
+
+
+.add-to-cart button {
+  width: 100%; 
+  padding: 10px 0;
+  font-size: 15px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+.add-to-cart button:hover {
+  background-color: #218838;
+}
+
+.empty-cart {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 20px;
+  color: #666;
+}
+

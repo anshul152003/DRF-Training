@@ -10,6 +10,10 @@ function Card({data,setCartItem}){
         setCartItem((oldData)=> { 
             return [...oldData,data];
         })
+
+        // setCartItem((oldData) => {
+        //     const keyMeCardMeHu = 
+        // })
     }
     return (
         <div className="card">
