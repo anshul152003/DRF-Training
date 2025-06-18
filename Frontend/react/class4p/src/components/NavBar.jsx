@@ -9,16 +9,16 @@ function Navbar({cartItem}) {
             <ul className="nav-list">
                 <li>
                     <NavLink className="active-link">Jay Shiv Chat</NavLink>
-                    <img src='' alt='logo'/>
+                    {/* <img src='' alt='logo'/> */}
                 </li>
                 <li>
-                    <NavLink to="/" ClassName="active-link">Home</NavLink>
+                    <NavLink to="/" className="active-link">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about" ClassName="active-link">About</NavLink>
+                    <NavLink to="/about" className="active-link">About</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact" ClassName="active-link">Contact</NavLink>
+                    <NavLink to="/contact" className="active-link">Contact</NavLink>
                 </li>
                 <div className='Mycart'>
                     <li>

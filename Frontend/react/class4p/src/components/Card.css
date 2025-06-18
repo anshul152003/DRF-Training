@@ -77,9 +77,35 @@
 
 .cart-container {
   margin-top: 12px;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
+.add-to-cart {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-to-cart p {
+  margin: 0;
+  padding: 0 8px;
+  user-select: none;
+}
+
+.add-to-cart p:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
 
 .add-to-cart button {
   width: 100%; 

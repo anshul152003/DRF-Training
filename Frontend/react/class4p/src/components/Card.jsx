@@ -4,8 +4,34 @@ import './Card.css'
 function Card({data,setCartItem,cartItem}){
 
     const [trackBtn, setTrackBtn] = useState(true);
-    function handleCardItem(card){
-        console.log("btn click hona", card);
+    let [count,setCount] = useState(data?.quantity);
+
+    const alreadyInCart = cartItem?.find((item) => item?.id === data?.id);
+    // console.log(alreadyInCart);
+
+    function removeFromCart(id){
+        const filterArray = cartItem?.filter((item) => item.id !== id);
+        setCartItem(filterArray);
+    } 
+
+    function incrementCount(){
+        console.log("hoga increment");
+        setCount(data.quantity++);
+    }
+
+    function decrementCount(){
+        console.log("hoga decrement");
+        setCount(() => {
+            if(data.quantity === 1){
+                removeFromCart(data.id);
+                return;
+            }
+            return data.quantity--;
+        });
+    }
+
+    function handleCardItem(data){
+        // console.log("btn click hona", data);
         //this add an Object inside itemcard array 
         //setCartItem(data);
 
@@ -19,12 +45,15 @@ function Card({data,setCartItem,cartItem}){
 
         //this a good function
         setCartItem((oldData) => {
-        const alreadyInCart = cartItem?.some(item => item.id === data.id);
-        if (alreadyInCart) {
-            alert("Already in Cart"); 
-            return oldData; 
-        }
-        return [...oldData, data];
+            const alreadyInCart = cartItem?.some((item) => item?.id === data?.id);
+        // const alreadyInCart = cartItem?.some(item => {
+        //     return item.id === data.id; 
+        // });
+            if (alreadyInCart) {
+                alert("Already in Cart"); 
+                return oldData; 
+            }
+            return [...oldData, data];
         });   
     }
     return (
@@ -53,9 +82,22 @@ function Card({data,setCartItem,cartItem}){
                         </div>
                     )}
                 </div>
-                <div className='cart-container'>
-                    <div className='add-to-cart'><button id='btnAdd' onClick={() => {handleCardItem(data)}}>Add to cart</button></div>
-                </div>  
+
+                {
+                    alreadyInCart !== undefined ? (
+                        <div className='cart-container'>
+                            <div className='add-to-cart'>
+                                <p onClick={() => {decrementCount()}}>-</p>
+                                <p>{alreadyInCart?.quantity}</p>
+                                <p onClick={() => {incrementCount()}}>+</p>
+                            </div>
+                        </div>
+                    ) : (
+                        <div className='cart-container'>
+                            <div className='add-to-cart'><button id='btnAdd' onClick={() => {handleCardItem(data)}}>Add to cart</button></div>
+                        </div>  
+                    )
+                }
             </div>
         </div>
     )
