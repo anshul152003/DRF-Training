@@ -12,7 +12,9 @@ function MyCart({cartItem}){
             ) : (
                 <div className="card-container">
                     {cartItem.map((item, index) => (
-                     <Card key={index} data={item} /> ))}
+                     <div key={index}>
+                        <Card  data={item} />
+                     </div> ))}
                 </div>
             )}
         </div>

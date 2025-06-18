@@ -1,24 +1,31 @@
 import { useState } from 'react';
 import './Card.css'
 
-function Card({data,setCartItem}){
+function Card({data,setCartItem,cartItem}){
 
     const [trackBtn, setTrackBtn] = useState(true);
     function handleCardItem(card){
         console.log("btn click hona", card);
 
-        //this add an Object to 
+        //this add an Object inside itemcard array 
         //setCartItem(data);
 
-        //this add an array 
+        //this add an element inside itemCard array which is in app.js but har bar new add hoga purana wala hat jayega
         // setCartItem([data]);
 
+        //this add every element inside the addCart from the data when the addbtn is clicked
         // setCartItem((oldData)=> { 
         //     return [...oldData,data];
         // })
 
+        //this a good function
         setCartItem((oldData) => {
-            return [...oldData, data];
+        const alreadyInCart = cartItem?.some(item => item.id === data.id);
+        if (alreadyInCart) {
+            alert("Already in Cart"); 
+            return oldData; 
+        }
+        return [...oldData, data];
         });
     }
     return (
