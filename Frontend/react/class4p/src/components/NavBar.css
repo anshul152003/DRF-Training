@@ -30,3 +30,25 @@
 ul li .active{
     color: rgb(117, 187, 4);
 }
+
+.Mycart {
+  position: relative;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+.Mycart li {
+  list-style: none;
+}
+
+.cart-count {
+  background-color: #e91e63;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+}

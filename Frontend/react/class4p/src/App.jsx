@@ -15,7 +15,7 @@ function App() {
   return (
 
     <div>
-      <Navbar />
+      <Navbar cartItem={cartItem}/>
       <Routes>
         <Route path="/" element={<Home product={product} setCartItem={setCartItem} cartItem={cartItem}/>} />
         <Route path="/about" element={<About />} />
