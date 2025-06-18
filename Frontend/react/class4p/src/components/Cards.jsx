@@ -5,31 +5,30 @@ function Card({data}){
 
     const [trackBtn, setTrackBtn] = useState(true);
     return (
-        <div className="App">
-            <img src={data?.image} alt="Food" />
-            <div>
-                <div>Name: {data?.productName}</div>
+        <div className="card">
+            <img src={data?.image} alt="Food" className="card-image" />
+            <div className="card-body">
+                <div className="card-title">Name: {data?.productName}</div>
                 <div>Rating: ⭐{data?.rating}</div>
                 <div>Made By: {data?.madeBy}</div>
-                <div>Price: ${data?.productPrice} <span>${data?.actualPrice}</span></div>
+                <div className="card-price">
+                    Price: <span className="discount">${data?.productPrice}</span>{' '}
+                    <span className="original">${data?.actualPrice}</span>
+                </div>
                 <div>Quantity: {data?.quantity}</div>
                 {/* <div>Description: {data?.description}</div> */}
-                <div>
-                    {trackBtn === true ? (
+                 <div className="card-description">
+                    {trackBtn ? (
                         <div>
-                            <p>
-                                {data?.description.substr(0,75)}
-                                <div>
-                                    <button onClick={()=>{setTrackBtn(!trackBtn)}}>Read More</button>
-                                </div>
-                            </p>
-                        </div> ) : (
+                            <p>{data?.description?.substr(0, 75)}...</p>
+                            <button className="toggle-btn" onClick={() => setTrackBtn(false)}>Read More</button>
+                        </div>
+                    ) : (
                         <div>
-                            <p>
-                                {data?.description}
-                            </p>
-                                <button onClick={() => {setTrackBtn(!trackBtn)}}>Read Less</button>
-                        </div>)}
+                            <p>{data?.description}</p>
+                            <button className="toggle-btn" onClick={() => setTrackBtn(true)}>Read Less</button>
+                        </div>
+                    )}
                 </div>
                         
             </div>

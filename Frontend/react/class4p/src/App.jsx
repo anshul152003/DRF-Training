@@ -1,24 +1,25 @@
 import { useState } from 'react';
 import { products } from './utilis/Products.jsx';
-import Card from './components/Cards.jsx';
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/Home.jsx";
+import Contact from "./pages/Contact.jsx"
+import About from "./pages/About.jsx"
+import PageNotFound from "./pages/PageNotFound.jsx"
+import Navbar from "./components/NavBar.jsx";
 
 function App() {
   const [product] = useState(products);
-  
+
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        gap: '20px',
-        padding: '24px',
-        backgroundColor: '#f5f5f5',
-      }}
-    >
-      {product.map((item, index) => (
-        <Card key={index} data={item} />
-      ))}
+
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home product={product} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </div>
   );
 }
