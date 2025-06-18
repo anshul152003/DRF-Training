@@ -8,8 +8,8 @@ function Navbar({cartItem}) {
         <nav className="navbar">
             <ul className="nav-list">
                 <li>
-                    <img src=''/>
                     <NavLink className="active-link">Jay Shiv Chat</NavLink>
+                    <img src='' alt='logo'/>
                 </li>
                 <li>
                     <NavLink to="/" ClassName="active-link">Home</NavLink>

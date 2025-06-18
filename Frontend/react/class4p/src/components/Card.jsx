@@ -6,7 +6,6 @@ function Card({data,setCartItem,cartItem}){
     const [trackBtn, setTrackBtn] = useState(true);
     function handleCardItem(card){
         console.log("btn click hona", card);
-
         //this add an Object inside itemcard array 
         //setCartItem(data);
 
@@ -26,7 +25,7 @@ function Card({data,setCartItem,cartItem}){
             return oldData; 
         }
         return [...oldData, data];
-        });
+        });   
     }
     return (
         <div className="card">
