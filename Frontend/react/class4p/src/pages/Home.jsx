@@ -1,10 +1,10 @@
-import Card from "../components/Cards"
+import Card from "../components/Card"
 import  "../components/Card.css"
-function Home({ product }) {
+function Home({ product,setCartItem }) {
   return (
     <div className="card-container">
       {product.map((item, index) => (
-        <Card key={index} data={item} />
+        <Card key={index} data={item} setCartItem={setCartItem}/>
       ))}
     </div>
   )

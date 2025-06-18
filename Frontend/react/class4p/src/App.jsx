@@ -6,18 +6,21 @@ import Contact from "./pages/Contact.jsx"
 import About from "./pages/About.jsx"
 import PageNotFound from "./pages/PageNotFound.jsx"
 import Navbar from "./components/NavBar.jsx";
+import MyCart from "./pages/MyCart.jsx"
 
 function App() {
   const [product] = useState(products);
+  const [cartItem, setCartItem] = useState([]);
 
   return (
 
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home product={product} />} />
+        <Route path="/" element={<Home product={product} setCartItem={setCartItem}/>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/mycart" element={<MyCart cartItem={cartItem}/>} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>

@@ -1,9 +1,16 @@
 import { useState } from 'react';
 import './Card.css'
 
-function Card({data}){
+function Card({data,setCartItem}){
 
     const [trackBtn, setTrackBtn] = useState(true);
+    function handleCardItem(card){
+        console.log("btn click hona", card);
+        // setCartItem([data]);
+        setCartItem((oldData)=> { 
+            return [...oldData,data];
+        })
+    }
     return (
         <div className="card">
             <img src={data?.image} alt="Food" className="card-image" />
@@ -30,7 +37,9 @@ function Card({data}){
                         </div>
                     )}
                 </div>
-                        
+                <div className='cart-container'>
+                    <div className='add-to-cart'><button id='btnAdd' onClick={() => {handleCardItem(data)}}>Add to cart</button></div>
+                </div>  
             </div>
         </div>
     )

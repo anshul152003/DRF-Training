@@ -16,6 +16,9 @@ function Navbar() {
                 <li>
                     <NavLink to="/contact" ClassName="active-link">Contact</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/mycart" ClassName="active-link">MyCart</NavLink>
+                </li>
             </ul>
         </nav>
     );
