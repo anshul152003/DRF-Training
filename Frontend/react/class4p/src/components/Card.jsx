@@ -6,14 +6,20 @@ function Card({data,setCartItem}){
     const [trackBtn, setTrackBtn] = useState(true);
     function handleCardItem(card){
         console.log("btn click hona", card);
-        // setCartItem([data]);
-        setCartItem((oldData)=> { 
-            return [...oldData,data];
-        })
 
-        // setCartItem((oldData) => {
-        //     const keyMeCardMeHu = 
+        //this add an Object to 
+        //setCartItem(data);
+
+        //this add an array 
+        // setCartItem([data]);
+
+        // setCartItem((oldData)=> { 
+        //     return [...oldData,data];
         // })
+
+        setCartItem((oldData) => {
+            return [...oldData, data];
+        });
     }
     return (
         <div className="card">
