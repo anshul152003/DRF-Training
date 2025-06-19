@@ -11,13 +11,12 @@ import MyCart from "./pages/MyCart.jsx"
 function App() {
   const [product] = useState(products);
   const [cartItem, setCartItem] = useState([]);
-  const alreadyInCart = cartItem?.find((item) => item?.id === data?.id);
 
   return (
     <div>
       <Navbar cartItem={cartItem}/>
       <Routes>
-        <Route path="/" element={<Home product={product} setCartItem={setCartItem} cartItem={cartItem} alreadyInCart={alreadyInCart}/>} />
+        <Route path="/" element={<Home product={product} setCartItem={setCartItem} cartItem={cartItem}/>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/mycart" element={<MyCart cartItem={cartItem} setCartItem={setCartItem} />} />

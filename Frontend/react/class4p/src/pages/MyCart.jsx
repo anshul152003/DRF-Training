@@ -13,7 +13,7 @@ function MyCart({cartItem, setCartItem}){
                 <div className="card-container">
                     {cartItem.map((item, index) => (
                      <div key={index}>
-                        <Card  data={item} />
+                        <Card  data={item} cartItem={cartItem} setCartItem={setCartItem}/>
                      </div> ))}
                 </div>
             )}

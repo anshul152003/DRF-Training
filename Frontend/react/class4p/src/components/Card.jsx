@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './Card.css'
 
-function Card({data, setCartItem, cartItem, alreadyInCart}){
+function Card({data, setCartItem, cartItem}){
 
     const [trackBtn, setTrackBtn] = useState(true);
     let [count,setCount] = useState(data?.quantity);
 
-    // const alreadyInCart = cartItem?.find((item) => item?.id === data?.id);
+    const alreadyInCart = cartItem?.find((item) => item?.id === data?.id);
     // console.log(alreadyInCart);
 
     function removeFromCart(id){
@@ -16,7 +16,7 @@ function Card({data, setCartItem, cartItem, alreadyInCart}){
 
     function incrementCount(){
         console.log("hoga increment");
-        setCount(data.quantity++);
+        setCount(++data.quantity);
     }
 
     function decrementCount(){
@@ -26,7 +26,7 @@ function Card({data, setCartItem, cartItem, alreadyInCart}){
                 removeFromCart(data.id);
                 return;
             }
-            return data.quantity--;
+            return --data.quantity;
         });
     }
 
@@ -87,9 +87,9 @@ function Card({data, setCartItem, cartItem, alreadyInCart}){
                     alreadyInCart !== undefined ? (
                         <div className='cart-container'>
                             <div className='add-to-cart'>
-                                <p onClick={() => {decrementCount()}}>-</p>
+                                <button onClick={() => {decrementCount()}}>-</button>
                                 <p>{alreadyInCart?.quantity}</p>
-                                <p onClick={() => {incrementCount()}}>+</p>
+                                <button onClick={() => {incrementCount()}}>+</button>
                             </div>
                         </div>
                     ) : (
