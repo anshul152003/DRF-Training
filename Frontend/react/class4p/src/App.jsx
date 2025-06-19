@@ -13,14 +13,13 @@ function App() {
   const [cartItem, setCartItem] = useState([]);
 
   return (
-
     <div>
       <Navbar cartItem={cartItem}/>
       <Routes>
         <Route path="/" element={<Home product={product} setCartItem={setCartItem} cartItem={cartItem}/>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/mycart" element={<MyCart cartItem={cartItem}/>} />
+        <Route path="/mycart" element={<MyCart cartItem={cartItem} setCartItem={setCartItem}/>} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>

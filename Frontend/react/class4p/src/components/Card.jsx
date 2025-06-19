@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Card.css'
 
-function Card({data,setCartItem,cartItem}){
+function Card({data, setCartItem, cartItem}){
 
     const [trackBtn, setTrackBtn] = useState(true);
     let [count,setCount] = useState(data?.quantity);

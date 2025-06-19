@@ -1,7 +1,7 @@
 import Card from '../components/Card.jsx'
 import '../components/Card.css'
 
-function MyCart({cartItem}){
+function MyCart({cartItem, setCartItem}){
     console.log(cartItem);
     return (
         <div>
