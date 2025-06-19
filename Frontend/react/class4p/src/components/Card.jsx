@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './Card.css'
 
-function Card({data, setCartItem, cartItem}){
+function Card({data, setCartItem, cartItem, alreadyInCart}){
 
     const [trackBtn, setTrackBtn] = useState(true);
     let [count,setCount] = useState(data?.quantity);
 
-    const alreadyInCart = cartItem?.find((item) => item?.id === data?.id);
+    // const alreadyInCart = cartItem?.find((item) => item?.id === data?.id);
     // console.log(alreadyInCart);
 
     function removeFromCart(id){
