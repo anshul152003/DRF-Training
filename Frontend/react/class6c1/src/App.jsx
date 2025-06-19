@@ -3,9 +3,10 @@ import Child1 from "./components/Child1.jsx"
 
 function App() {
 
-  const [name, setName] = useState();
+  const [name, setName] = useState("Aviraj");
   function getData(Data){
     setName(Data);
+    console.log("data come from child 3",Data);
   }
   return (
     <div className="App">

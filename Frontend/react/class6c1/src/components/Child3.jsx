@@ -1,9 +1,10 @@
 const Child3 = ({getData}) => {
-    const name = "Anshul";
-    getData({name});
+    let name = "Anshul";
+    getData(name);
   return (
     <div>
-        <p>{name}</p>
+      {/* <h1>Child 3 Hu</h1> */}
+      <p>Child3</p>
     </div>
   )
 }
