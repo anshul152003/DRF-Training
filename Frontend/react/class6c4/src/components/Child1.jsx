@@ -1,7 +1,8 @@
 import { useContext } from "react"
-import { myContext } from "../App"
+import { myContext } from "../context/MyContext"
 
 function Child1() {
+    // step-4 we are using the context value 
     const {age,uName}=useContext(myContext)
     return (
         <div>

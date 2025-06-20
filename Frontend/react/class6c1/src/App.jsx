@@ -1,19 +1,19 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import Child1 from "./components/Child1.jsx"
+import './App.css'
 
 function App() {
-
-  const [name, setName] = useState("Aviraj");
-  function getData(Data){
-    setName(Data);
-    console.log("data come from child 3",Data);
+  const [name, setName] = useState("Mohan");
+  function getDataFromTheChild(data) {
+    setName(data)
   }
+
   return (
-    <div className="App">
-      <h2>Set Name: {name}</h2>
-      <Child1 getData={getData}/>
-    </div>
-  );
+    <>
+      <p>{name}</p>
+      <Child1 getDataFromTheChild={getDataFromTheChild} />
+    </>
+  )
 }
 
-export default App;
+export default App

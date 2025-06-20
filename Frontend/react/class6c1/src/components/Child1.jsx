@@ -1,10 +1,10 @@
 import Child2 from "./Child2.jsx"
 
-const Child1 = ({getData}) => {
+function Child1({getDataFromTheChild}) {
   return (
     <div>
-      {/* <h1>Child1 Hu</h1> */}
-      <Child2 getData={getData}/>
+
+        <Child2  getDataFromTheChild={getDataFromTheChild}/>
     </div>
   )
 }

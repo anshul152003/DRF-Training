@@ -1,11 +1,8 @@
-import Child3 from './Child3.jsx'
+import Child3 from "./Child3.jsx"
 
-function Child2({getData}) {
+function Child2({getDataFromTheChild}) {
   return (
-    <div>
-      {/* <h2>Child 2 Hu</h2> */}
-      <Child3 getData={getData}/>
-    </div>
+    <div><Child3  getDataFromTheChild={getDataFromTheChild}/></div>
   )
 }
 

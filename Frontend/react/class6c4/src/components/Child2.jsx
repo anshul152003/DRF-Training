@@ -1,5 +1,6 @@
 import { useContext } from "react"
-import { myContext } from "../App"
+import { myContext } from "../context/MyContext"
+
 function Child2() {
         const {age,uName,printTable}=useContext(myContext);
         printTable()
