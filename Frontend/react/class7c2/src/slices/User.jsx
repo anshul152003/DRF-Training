@@ -1,11 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
+import aviPhoto from '../assets/avi.JPG';  
 
 const userSlice = createSlice({
   name: 'user',
   initialState: {
-    name: 'Raj',
-    age: 25,
-    email: 'raj@example.com',
+    name : 'Aviraj Bhaii',
+    age  : 25,
+    email: 'Avibhaliya@example.com',
+    photo: aviPhoto,
   },
   reducers: {
     changeUser: (_, action) => action.payload,
