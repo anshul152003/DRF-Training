@@ -1,9 +1,6 @@
-import MyContext from "./context/MyContext";
 
+import MyContext from './context/MyContext.jsx';
 function App() {
-
-
-
   return (
     <div>
       <MyContext />
