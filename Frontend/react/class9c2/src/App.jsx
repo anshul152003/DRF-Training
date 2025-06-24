@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { useState } from 'react';
+import './App.css';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Data from './utilis/Data';
 function App() {
-  const [count, setCount] = useState(0)
+  const [data, setData] = useState(Data)
+  const [copydata,setCopyData]=useState(data)
+  function getValueFromNavbar(item) {
+    console.log("item", item)
+    let array1 = data.filter((cardItem) => {
+      return cardItem === item
+    })
+    setData(array1)
+  }
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <Navbar getValueFromNavbar={getValueFromNavbar} setData={setData} data={data} copydata={copydata}/>
+      <Home data={data} />
+    </div>
+  );
 }
 
-export default App
+export default App;
