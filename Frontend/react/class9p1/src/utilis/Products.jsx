@@ -1,6 +1,3 @@
-
-
-
 export const products = [
   {
     id: 1,
@@ -136,7 +133,7 @@ export const products = [
   },
   {
     id: 12,
-    image: "https://imgs.search.brave.brave.com/XTdykdKm39X5VD7QPZiWbSHTQGfASMcPB34HJ7U6_ws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTIw/NTQ4MjI5MC9waG90/by9tYXNhbGEtZG9z/YS1vbi1iYW5hbmEt/bGVhZi13aXRoLWJv/dGgtc2FtYmFyLWFu/ZC1jb2NvbnV0LWNo/dXRuZXktc291dGgt/aW5kaWFuLXZlZ2V0/YXJpYW4tc25hY2su/anBn",
+    image: "https://imgs.search.brave.com/ea8AMxK7j436fGM058e49JF-89RC1X3uGVXOYpDjU5I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE1/Njg4Nzk1MS9waG90/by9jaGVlc2UtbWFz/YWxhLWRvc2EtcmVj/aXBlLXdpdGgtc2Ft/YmFyLWFuZC1jaHV0/bmV5LXNlbGVjdGl2/ZS1mb2N1cy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9S1da/NGhBWnRVbTRKcnJU/R3o2cXNHaHRncnht/ZXQteDM0NzBDRmox/aS1mND0",
     productName: "Masala Dosa",
     productPrice: 99,
     actualPrice: 129,

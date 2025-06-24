@@ -1,0 +1,27 @@
+/* src/pages/Home.css */
+
+.home-wrapper {
+  padding: 2rem;
+  text-align: center;
+}
+
+.search-input {
+  padding: 0.6rem 1rem;
+  width: 300px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #f57c00;
+  box-shadow: 0 0 5px #f57c00;
+}
+
+.no-results {
+  font-size: 1.2rem;
+  color: #d32f2f;
+  margin-top: 2rem;
+}
