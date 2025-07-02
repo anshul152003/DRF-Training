@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
+const Router = require("./routes/CourseRoute.js")
 
 const DatabaseConnection = require("./config/DatabaseConnect.js");
 const app = express();
@@ -14,4 +15,7 @@ app.get('/', (req,res) => {
     res.send('Welcome to the server');
 })
 
+app.use(express.json());
 DatabaseConnection();
+
+app.use("/api/course/v1", Router);

@@ -6,4 +6,4 @@ const CourseSchema = new mongoose.Schema({
     CourseRating : {type: "String", required: "Yes"},
 })
 
-module.exports = mongoose.modal("Course", CourseSchema);
+module.exports = mongoose.model("Course", CourseSchema);
