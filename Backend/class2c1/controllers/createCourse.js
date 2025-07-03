@@ -1,14 +1,26 @@
 const Course = require("../modals/Course.js")
 async function createCourse(req, res) {
-    try {
-        const { couserName, courseDuration, couserAuthor, courseRating } = req.body;
-        //this responsible for creating collection in db
-        const response = await Course.create({ couserName, courseDuration, couserAuthor, courseRating });
-        res.status(201).json({
-            message: "Course created successfully",
-            data: response
-        })
 
+    try {
+
+        const courses = req.body;
+        // Check if data is an array
+        if (!Array.isArray(courses)) {
+            return res.status(400).json({ message: "Expected an array of courses" });
+        }
+        const response = await Course.insertMany(courses);
+
+        res.status(201).json({
+            message: "Courses created successfully",
+            data: response
+        });
+        // const { couserName, courseDuration, couserAuthor, courseRating } = req.body;
+        //this responsible for creating collection in db
+        // const response = await Course.create({ couserName, courseDuration, couserAuthor, courseRating });
+        // res.status(201).json({
+        //     message: "Course created successfully",
+        //     data: response
+        // })
     }
     catch (error) {
         console.log("we are getting an error ", error);

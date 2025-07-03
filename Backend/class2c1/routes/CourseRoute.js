@@ -8,7 +8,7 @@ const updateCourse=require("../controllers/updateCourse.js")
 const deleteController=require("../controllers/deleteController.js")
 router.post("/create-course", createCourse);
 router.get("/all-courses", getCourse);
-router.get("/single-course", getSingleCourse);
+// router.get("/single-course", getSingleCourse);
 router.get("/single-course/:id", getCourseByParameter);
 router.put("/update-single-course/:id", updateCourse);
 router.delete("/delete-single-course/:id", deleteController);
