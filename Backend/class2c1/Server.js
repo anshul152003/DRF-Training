@@ -1,21 +1,31 @@
+// step-1 
 const express = require("express");
-const mongoose = require("mongoose");
 require("dotenv").config();
-const Router = require("./routes/CourseRoute.js")
-
-const DatabaseConnection = require("./config/DatabaseConnect.js");
+const DataBaseConnection = require("./config/DataBaseConnect.js");
+const CourseRoute = require("./routes/CourseRoute.js")
+// step-2 instance creation
 const app = express();
+// step-3server ko start karunga
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
-    console.log(`Server is listening on Port ${PORT}`)
+    console.log(`Server is running on ${PORT}`)
 })
 
-app.get('/', (req,res) => {
-    res.send('Welcome to the server');
+
+
+//for getting the data from the req.body u have to use middle ware 
+app.use(express.json())
+
+//step-4 me UI me verify karne ke 
+app.get("/", (req, res) => {
+    res.send("<h1>Our Project now live</h1>")
 })
 
-app.use(express.json());
-DatabaseConnection();
 
-app.use("/api/course/v1", Router);
+//step-5 Data base connection 
+DataBaseConnection();
+
+
+//step-6 call here routes 
+app.use("/course/api/v1", CourseRoute)
