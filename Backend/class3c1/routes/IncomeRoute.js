@@ -8,6 +8,6 @@ const DeleteIncome = require("../controllers/DeleteIncome");
 router.post("/create-income", CreateIncome);
 router.get("/get-income",GetIncome);
 router.put("/put-income/:givenId", PutIncome);
-router.delete("/delete-Income/:id", DeleteIncome);
+router.delete("/delete-income/:id", DeleteIncome);
 
 module.exports = router
