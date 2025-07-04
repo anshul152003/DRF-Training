@@ -1,6 +1,6 @@
 const User = require("../models/User");
 
-async function Signup(req, res){
+async function CreateUser(req, res){
     try{
                 
     }
@@ -12,4 +12,4 @@ async function Signup(req, res){
     }
 }
 
-module.exports = Signup
+module.exports = CreateUser
