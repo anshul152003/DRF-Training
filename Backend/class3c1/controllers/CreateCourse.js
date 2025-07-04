@@ -1,8 +1,8 @@
 const Course = require("../models/Course");
 async function CreateCourse(req, res) {
     try{
-        const { courseName, courseDuration, courseDescripition } = req.body;
-        const dbResponse = await Course.create({ courseName, courseDuration, courseDescripition });
+        const { courseName, courseDuration, courseDescription } = req.body;
+        const dbResponse = await Course.create({ courseName, courseDuration, courseDescription });
         res.status(201).json({
             message: "Course Created Successfully.",
             data: dbResponse

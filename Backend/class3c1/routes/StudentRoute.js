@@ -3,5 +3,6 @@ const router = express.Router();
 const CreateStudent = require("../controllers/CreateStudent");
 
 router.post("/create-student", CreateStudent);
+router.get("/get-student",CreateStudent);
 
 module.exports = router
