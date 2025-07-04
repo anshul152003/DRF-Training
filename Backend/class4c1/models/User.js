@@ -4,7 +4,7 @@ const UserSchema = new mongoose.Schema({
     lName: {type: String, maxLength:20, require: true},
     age: {type: Number, require: true},
     email: {type: String, maxLength:50, require: true},
-    password: {type: String, maxLength:20, require: true}
+    password: {type: String, maxLength:200, require: true}
 });
 
 module.exports = mongoose.model("User", UserSchema);
