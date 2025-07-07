@@ -2,6 +2,8 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 async function VerifyLogin(req, res, next) {
     try{
+         const token = req.body.token;
+         //validation
          
     }
     catch (error) {
