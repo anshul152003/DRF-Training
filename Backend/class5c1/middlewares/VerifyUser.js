@@ -11,7 +11,15 @@ async function VerifyLogin(req, res, next) {
             })
         }
         const decodeData = jwt.verify(token, process.env.JWTSECRET);
-        
+        console.log("Decode data", decodeData);
+        if(!decodeData){
+            return res.status(404).json({
+                message : "Token apki sahi nhi hai",
+                success : false
+            })
+        }
+        req.user = decodeData;
+        next();
     }
     catch (error) {
             console.error("Verification failed:", error);

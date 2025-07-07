@@ -39,6 +39,7 @@ async function Login(req, res) {
             role: isExist.role,
           },
         }); */
+        console.log("ghjkld ", await bcrypt.compare(password, isExist.password))
         if (await bcrypt.compare(password, isExist.password)) {
             const payload = {
                 id: isExist._id,
@@ -47,9 +48,10 @@ async function Login(req, res) {
                 email: isExist.email,
                 role: isExist.role,
             }
+            isExist = isExist.toObject();
             isExist = null;
             const token = jwt.sign(payload, process.env.JWTSECRET, {expiresIn:"1h"});
-            console.log("aaaa",token);
+            console.log("Ham ne token generate kar lee hai ",token);
             /*isExist.token = token; setting token to isExist
              return res.status(200).json({
                 message: "Login successful",
@@ -57,11 +59,16 @@ async function Login(req, res) {
             }) */
 
             return res.cookie("token", token).status(200).json({
-                message: "Login successful",
+                message: "User Login successful",
                 data: isExist
             })
         }
-
+        else {
+            response.status(400).json({
+                message: "Bhai password to shi dalo ",
+                success: false
+            })
+        }
     } catch (error) {
             console.error("Login failed:", error);
             res.status(500).json({
