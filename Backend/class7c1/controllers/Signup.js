@@ -10,7 +10,6 @@ async function Signup(req, res) {
 
         //step-2 validation
         if (fName === "" || lName === "" || email === "" || password === "") {
-
             return res.status(400).json({
                 message: "You have to fill the all data empty data is not allowed, Signup controller",
                 success: false
@@ -26,7 +25,6 @@ async function Signup(req, res) {
         //step-4 account open karo
         //bhai password encrpt kar do 
         let encryptPassword;
-
         try {
             encryptPassword = await bcrypt.hash(password, 10);
 
@@ -51,8 +49,6 @@ async function Signup(req, res) {
             success: true,
             data: newUser
         })
-
-
     }
     catch (error) {
         console.log("Error in signup controller", error);

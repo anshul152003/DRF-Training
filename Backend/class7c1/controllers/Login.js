@@ -6,7 +6,6 @@ async function Login(req, res) {
     try {
         //step-1 Get the data 
         const { email, password } = req.body;
-
         //step-2 validation
         if (email === "" || password === "") {
 
