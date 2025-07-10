@@ -1,27 +1,27 @@
 const express = require("express");
-require("dotenv").config()
-const FormRoute=require("./routes/FormRoute.js")
-//step-1 instance create
+require("dotenv").config();
+const FormRoute = require("./routes/FormRoute.js");
+const DbConnection = require("./configuration/DbConnection.js");
+
 const app = express();
+const PORT = process.env.PORT || 3500;
 
-const PORT = process.env.PORT || 3500
+// ✅ Step 1: Connect to DB before anything
+DbConnection();
 
-//step-2 start server
-app.listen(PORT, () => {
-    console.log(`Server is running at ${PORT}`)
-})
+// ✅ Step 2: Use body parsing middleware BEFORE routes
+app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // optional for form data
 
-//step-3 use middlewares to parse data from body
-app.use(express.json())
+// ✅ Step 3: Mount your routes
+app.use("/Form", FormRoute);
 
-//step-4 Database connectivity
-const DbConnection=require("./configuration/DbConnection")
-DbConnection()
-
-//step-5 Mount your routes here 
-app.use("/Form",FormRoute)
-
-//step-6 make demo page to show on the UI
+// ✅ Step 4: Demo route
 app.get("/", (req, res) => {
-    res.send("This is our home page")
-})
+    res.send("This is our home page");
+});
+
+// ✅ Step 5: Start the server
+app.listen(PORT, () => {
+    console.log(`🚀 Server is running at port ${PORT}`);
+});
