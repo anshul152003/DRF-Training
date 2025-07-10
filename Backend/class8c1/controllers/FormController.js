@@ -2,6 +2,8 @@ const Course = require("../models/Course.js");
 
 async function FormController(req, res){
     try{
+        //get the data from body in formdata
+        const { cName, cDes, cPrice} = req.body;
         
     }
     catch (error) {
